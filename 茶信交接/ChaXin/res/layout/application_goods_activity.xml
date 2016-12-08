@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+       
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_background_color_gray"
+        android:orientation="vertical" >
+
+        <include layout="@layout/all_actionbar" />
+
+        <LinearLayout
+            style="@style/all_linear_fw_horizontal"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/shape_application_goods"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dip"
+            android:paddingTop="6dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:text="*"
+                android:textColor="@color/theme_text_normal_color_red" />
+
+            <TextView
+                style="@style/all_tv_wrap_middle_gray"
+                android:layout_marginLeft="0dip"
+                android:text="@string/exit_goods_reason" />
+
+            <EditText
+                android:id="@+id/exit_goods_reason"
+                style="@style/exit_goods_edittext" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/all_linear_fw_horizontal"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/shape_application_goods"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dip"
+            android:paddingTop="6dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:text="*"
+                android:textColor="@color/theme_text_normal_color_red" />
+
+            <TextView
+                style="@style/all_tv_wrap_middle_gray"
+                android:layout_marginLeft="0dip"
+                android:text="@string/exit_goods_money" />
+
+            <EditText
+                android:id="@+id/exit_goods_money"
+                style="@style/exit_goods_edittext"
+                android:text="￥1000"
+                android:textColor="@color/theme_text_normal_color_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/all_linear_fw_horizontal"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/shape_application_goods"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dip"
+            android:paddingTop="6dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dip"
+                android:text="*"
+                android:textColor="@color/theme_text_normal_color_red" />
+
+            <TextView
+                style="@style/all_tv_wrap_middle_gray"
+                android:layout_marginLeft="0dip"
+                android:text="@string/exit_goods_instruction" />
+
+            <EditText
+                android:id="@+id/exit_goods_instruction"
+                style="@style/exit_goods_edittext"
+                android:hint="@string/exit_goods_instruction_hint" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/exit_goods_add_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dip"
+            android:layout_marginTop="12dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/add_imageview" />
+
+            <TextView
+                style="@style/all_tv_wrap_small_gray"
+                android:text="@string/exit_goods_voucher_upload" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/all_linear_fw_horizontal"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_height="36dip"
+        android:paddingBottom="3dip"
+        android:paddingTop="3dip" >
+
+        <Button
+            android:id="@+id/exit_goods_appcation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dip"
+            android:background="@drawable/shape_button_orange"
+            android:textSize="@dimen/textsize_small"
+            android:textColor="@color/theme_text_normal_color_orange"
+            android:text="@string/exit_goods_appcation" />
+    </LinearLayout>
+
+</RelativeLayout>

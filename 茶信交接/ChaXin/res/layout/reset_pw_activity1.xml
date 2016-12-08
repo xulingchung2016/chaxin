@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+    
+    
+    <include layout="@layout/all_actionbar"/>
+    
+   
+
+    <LinearLayout
+        style="@style/personal_center_linear"
+        android:layout_marginTop="1dip"
+        >
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:gravity="left"
+                android:text="原手机号" />
+
+            <EditText
+               android:hint="填写原有手机号"
+                android:id="@+id/et_old_phone"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+        
+        
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:gravity="left"
+                android:text="新手机号" />
+
+            <EditText
+                 android:hint="填写新手机号"
+                android:id="@+id/et_new_phone1"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+        <View style="@style/personal_center_view_divider" />
+        
+        
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:gravity="left"
+                android:text="确认手机号" />
+
+            <EditText
+                 android:hint="再次输入手机号"
+                android:id="@+id/et_new_phone2"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+        <View style="@style/personal_center_view_divider" />
+        
+        
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:gravity="left"
+                android:text="登录密码" />
+
+            <EditText
+                 android:hint="填写登录密码"
+                android:id="@+id/et_login_pass"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+
+       
+        
+
+    </LinearLayout>
+    
+    
+    <Button 
+        android:id="@+id/next"
+        style="@style/all_btn_orange_all_screen"
+        android:text="@string/ok"
+        
+        
+        />
+    
+    
+    
+
+</LinearLayout>

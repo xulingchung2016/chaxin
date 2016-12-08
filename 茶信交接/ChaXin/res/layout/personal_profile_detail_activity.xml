@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <LinearLayout style="@style/personal_center_linear"
+        android:layout_marginTop="1dip"
+         >
+
+        <LinearLayout style="@style/personal_profile_linear" >
+
+            <TextView
+                style="@style/personal_profile_textview_black"
+                android:text="@string/person_data_head_picture" />
+
+            <ImageView
+                android:id="@+id/personal_center_user_avatars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:src="@drawable/my_user" />
+
+            <ImageView style="@style/personal_center_arrow" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+
+        <LinearLayout style="@style/personal_profile_linear" >
+
+            <TextView
+                style="@style/personal_profile_textview_black"
+                android:text="@string/person_data_nice_name" />
+
+            <TextView
+                android:id="@+id/personal_profile_nicheng"
+                style="@style/personal_profile_textview_gray"
+                android:text="小明" />
+
+            <ImageView style="@style/personal_center_arrow" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+
+        <LinearLayout style="@style/personal_profile_linear" >
+
+            <TextView
+                style="@style/personal_profile_textview_black"
+                android:text="@string/person_data_sex" />
+
+            <TextView
+                android:id="@+id/personal_profile_sex"
+                style="@style/personal_profile_textview_gray"
+                android:text="小明" />
+
+            <ImageView style="@style/personal_center_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    
+
+        <LinearLayout style="@style/personal_center_linear" >
+
+            <LinearLayout
+                style="@style/personal_profile_linear"
+                android:layout_marginTop="8dip" >
+
+                <TextView
+                    style="@style/personal_profile_textview_black"
+                    android:text="@string/person_data_receive_goods_manager" />
+
+                <TextView
+                    android:id="@+id/personal_profile_address"
+                    style="@style/personal_profile_textview_gray"
+                    android:text="小明" />
+
+                <ImageView style="@style/personal_center_arrow" />
+            </LinearLayout>
+        </LinearLayout>
+    
+
+</LinearLayout>

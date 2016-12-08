@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:theme">@android:style/Theme.Light.NoTitleBar</item>
+
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <!-- all -->
+
+
+    <!-- 橙色的button -->
+    <style name="all_btn_orange_all_screen">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_bg</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:layout_marginTop">16dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_white</item>
+    </style>
+
+    <style name="all_et_fw_bg_white_shape_gray">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_button_gray</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:padding">8dip</item>
+        <item name="android:layout_margin">6dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+    </style>
+
+    <style name="all_image_ww_fixXY">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="all_dialog_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_text_normal_color_blue</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- 橙色不是全屏  而是自适应的button -->
+    <style name="all_button_ww_orange">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:textColor">@color/theme_text_normal_color_white</item>
+    </style>
+
+    <style name="become_btn">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+         <item name="android:background">@drawable/shape_become</item>
+          <item name="android:paddingTop">29dip</item>
+        <item name="android:paddingBottom">29dip</item>
+         
+         
+    </style>
+
+    <style name="become_linear">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="become_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <!-- 商城按钮 -->
+    <style name="all_radiobutton_teamall_">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/selector_all_radiobutton_textcolor</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:paddingTop">12dip</item>
+        <item name="android:paddingBottom">12dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- 商城按钮 -->
+    <style name="all_radiobutton_teamall2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/selector_all_radiobutton_textcolor</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingLeft">4dip</item>
+        <item name="android:paddingRight">4dip</item>
+        <item name="android:layout_marginLeft">6dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/selector_teamall2_bg</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- dialog样式 -->
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="all_check_button_shop_car">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_all_check_button_shop_car</item>
+    </style>
+
+    <!-- 方形的checkbox -->
+    <style name="all_check_button_square">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_all_check_square</item>
+    </style>
+
+    <!-- 方形的checkbox drawable_left -->
+    <style name="all_check_button_square_drawable_left">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:drawableLeft">@drawable/selector_all_check_square</item>
+        <item name="android:drawablePadding">6dip</item>
+        <item name="android:padding">4dip</item>
+    </style>
+
+    <style name="all_check_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@drawable/selector_all_check</item>
+    </style>
+
+    <style name="all_toggle_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:textOn"></item>
+        <item name="android:textOff"></item>
+        <item name="android:background">@drawable/selector_all_check</item>
+    </style>
+
+    <style name="all_divider_all_screen">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.2dip</item>
+        <item name="android:background">@color/theme_background_color_gray</item>
+    </style>
+
+    <style name="all_divider_vertic_all_screen">
+        <item name="android:layout_width">1dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_marginBottom">0dip</item>
+        <item name="android:background">@color/theme_background_color_gray</item>
+    </style>
+
+    <!-- radio -->
+    <style name="all_radiobutton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@drawable/selector_all_radiobutton_textcolor</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:paddingTop">1dip</item>
+        <item name="android:paddingBottom">3dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <style name="all_radiobutton_weigth1" parent="all_radiobutton">
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:paddingTop">8dip</item>
+    </style>
+
+    <style name="all_tv_wrap_middle_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:layout_marginLeft">6dip</item>
+    </style>
+
+    <style name="all_tv_wrap_middle_black">
+        <item name="android:layout_width">250dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:layout_marginLeft">6dip</item>
+    </style>
+
+    <style name="all_tv_wrap_small_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:layout_marginLeft">6dip</item>
+    </style>
+
+    <style name="all_tv_wrap_small_black">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:layout_marginLeft">6dip</item>
+    </style>
+
+    <style name="all_linear_fw_horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="all_linear_fw_vertical" parent="all_linear_fw_horizontal">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="my_comment_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">30dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingRight">6dip</item>
+        <item name="android:background">@drawable/selector_comment</item>
+    </style>
+
+    <style name="comment_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">16dip</item>
+        <item name="android:layout_marginRight">16dip</item>
+    </style>
+
+    <style name="comment_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">6dip</item>
+    </style>
+
+    <style name="comment_ratingbar" parent="@android:style/Widget.RatingBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:layout_marginLeft">6dip</item>
+        <item name="android:progressDrawable">@drawable/layer_list_ratingbar</item>
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <!-- 申请退货的edittext -->
+    <style name="exit_goods_edittext">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:layout_marginRight">6dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:hint">@string/exit_goods_reason_hint</item>
+    </style>
+
+    <!-- 收货地址 -->
+    <style name="receiver_address_edittext">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingBottom">3dip</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:layout_marginRight">6dip</item>
+        <item name="android:layout_marginLeft">6dip</item>
+    </style>
+
+    <style name="receiver_address_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingBottom">4dip</item>
+        <item name="android:paddingTop">4dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="receiver_address_textview">
+        <item name="android:layout_width">70dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+    </style>
+
+    <!-- pop进出进入动画 -->
+    <style name="pop_animation_style">
+        <item name="android:windowEnterAnimation">@anim/pop_window_enter_animation</item>
+        <item name="android:windowExitAnimation">@anim/pop_window_exit_animation</item>
+    </style>
+
+    <!-- popwindow -->
+    <style name="popwindow_button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">6dip</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+    </style>
+
+    <!-- 选中全部商品 -->
+    <style name="check_all_shop_car">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:button">@drawable/selector_all_check_button_shop_car</item>
+        <item name="android:drawablePadding">5dip</item>
+        <!-- <item name="android:drawableLeft">@drawable/selector_all_check_button_shop_car</item> -->
+    </style>
+
+    <!-- 商品详情的  主体参数 textview -->
+    <style name="detail_textview_main_params">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+    </style>
+
+    <!-- 商品详情的  主体参数 textview1 -->
+    <style name="detail_textview1_main_params">
+        <item name="android:layout_width">80dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">6dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+    </style>
+
+    <!-- 商品详情的  主体参数 textview2 -->
+    <style name="detail_textview2_main_params">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+    </style>
+
+    <!-- iamgeview -->
+    <style name="detail_image_picture">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12dip</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 商品详情的  主体参数  linear -->
+    <style name="detail_linear_main_params">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">4dip</item>
+        <item name="android:paddingBottom">4dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- 茶商城   店铺listview item  linear -->
+    <style name="tea_mall_shop_linear">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- 茶商城   店铺listview item textivew 商品 -->
+    <style name="tea_mall_shop_textivew">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+
+    <!-- 茶商城   店铺listview item textivew 平分 -->
+    <style name="tea_mall_shop_textivew2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:drawablePadding">5dip</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:textColor">@color/theme_text_normal_color_red</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <!-- 设置界面   textview -->
+    <style name="set_textview_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:paddingTop">12dip</item>
+        <item name="android:paddingBottom">12dip</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+    </style>
+
+    <!-- 设置界面   编辑地址   固定宽textview -->
+    <style name="set_textview_style_regular_width">
+        <item name="android:layout_width">130dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+    </style>
+
+    <!-- 设置界面   编辑地址   固定宽edittext -->
+    <style name="set_edittext_style_editor_address">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <!-- 个人信息 -->
+    <style name="personal_profile_textview_gray">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="personal_profile_textview_black">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingTop">5dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+    </style>
+
+    <style name="personal_profile_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingBottom">5dip</item>
+        <item name="android:paddingTop">5dip</item>
+    </style>
+
+    <!-- 个人中心 -->
+
+    <style name="personal_center_linear">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_personal_center_linear</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="personal_center_relative">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="personal_center_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="personal_center_textview2">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="personal_center_arrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">6dip</item>
+        <item name="android:src">@drawable/arrows_right_gray</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:padding">6dip</item>
+    </style>
+
+    <style name="personal_center_view_divider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">@color/theme_driver_color</item>
+        <item name="android:layout_marginLeft">10dip</item>
+    </style>
+
+    <!-- 设置界面   textview  small -->
+    <style name="set_textview_style_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:paddingTop">8dip</item>
+        <item name="android:paddingBottom">8dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+    </style>
+
+    <style name="my_small_tea_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">8dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:paddingTop">4dip</item>
+        <item name="android:paddingBottom">3dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_black</item>
+    </style>
+    
+    
+    <style name="beauty_profile_"  parent="my_small_tea_textview">
+        
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        
+    </style>
+    
+    <style name="beauty_profile_gray"  parent="beauty_profile_">
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+        
+    </style>
+    
+
+    <!-- 我的里面的textview -->
+    <style name="my_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">2dip</item>
+        <item name="android:paddingBottom">2dip</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_white</item>
+    </style>
+
+    <!-- 我的linear  全部订单 -->
+    <style name="my_four_linear_horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">1dip</item>
+        <item name="android:paddingTop">4dip</item>
+        <item name="android:paddingBottom">4dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- 我的linear  全部订单 -->
+    <style name="my_arrows_right">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/arrows_right_gray</item>
+        <item name="android:layout_marginRight">8dip</item>
+    </style>
+
+    <style name="animation">
+        <item name="android:windowEnterAnimation">@anim/translats_status_in</item>
+        <item name="android:windowExitAnimation">@anim/translats_status_out</item>
+    </style>
+
+    <!-- 我的linear  全部订单 -->
+    <style name="my_four_textview_horizontal">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/textsize_middle</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+    </style>
+
+    <!-- 我的linear -->
+    <style name="my_four_linear">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">1dip</item>
+        <item name="android:paddingBottom">3dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <!-- 我的imageview -->
+    <style name="my_four_imageview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:paddingTop">6dip</item>
+        <item name="android:paddingBottom">6dip</item>
+    </style>
+
+    <!-- 我的textview -->
+    <style name="my_four_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+    </style>
+
+    <!-- 我的textview -->
+    <style name="my_four2_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_small</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+    </style>
+
+    <!-- 主界面限时抢购   茶丽人推荐 -->
+    <style name="homepager_xsqgclrtj_linear">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">1dip</item>
+        <item name="android:paddingBottom">3dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="homepager_xsqgclrtj_textview">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/textsize_small_1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginLeft">3dip</item>
+        <item name="android:layout_marginRight">3dip</item>
+        <item name="android:textColor">@color/theme_bright_not</item>
+    </style>
+
+    <style name="homepager_xsqgclrtj_imageview">
+        <item name="android:layout_width">72dip</item>
+        <item name="android:layout_height">72dip</item>
+        <item name="android:textColor">@drawable/selector_all_radiobutton_textcolor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="homepager_tea_company_business_imageview">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">72dip</item>
+        <item name="android:textColor">@drawable/selector_all_radiobutton_textcolor</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_marginLeft">1dip</item>
+        <item name="android:background">@android:color/white</item>
+    </style>
+
+    <style name="homepager_view">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@color/theme_driver_color</item>
+    </style>
+
+
+</resources>

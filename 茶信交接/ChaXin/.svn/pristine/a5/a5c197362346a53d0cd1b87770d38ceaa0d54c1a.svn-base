@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/tea_fans_linear"
+        style="@style/my_four_linear_horizontal"
+        android:layout_marginTop="1dip" >
+
+        <ImageView
+            style="@style/my_four_imageview"
+            android:src="@drawable/my_all_order"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/my_four_textview_horizontal"
+            android:layout_marginLeft="8dip"
+            android:text="@string/tea_fans_your_direct_fans"
+            android:textColor="@color/theme_text_normal_color_black" />
+
+        <TextView
+            android:id="@+id/tea_fans_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="85个"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="@dimen/textsize_middle" />
+
+        <ImageView
+            style="@style/my_arrows_right"
+            android:layout_margin="8dip" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/tea_fans_begin_time"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/tea_fans_begin_time"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="@dimen/textsize_middle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:text="@string/tea_fans_dao"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+
+        <Button
+            android:id="@+id/tea_fans_finish_time"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="@string/tea_fans_finish_time"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="@dimen/textsize_middle" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="6dip"
+            android:layout_marginTop="6dip"
+            android:background="@color/theme_background_color_gray" />
+
+        <Button
+            android:id="@+id/tea_fans_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:text="@string/tea_fans_search"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="16dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:text="@string/tea_fans_tip"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="@dimen/textsize_middle_1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/fans_item_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dip"
+            android:paddingBottom="8dip"
+            android:paddingTop="8dip"
+            android:text="@string/tea_fans_recommended_fans"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="@dimen/textsize_middle_1" />
+
+        <TextView
+            android:id="@+id/fans_item_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/tea_fans_qualified_fans"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="@dimen/textsize_middle_1" />
+
+        <TextView
+            android:id="@+id/fans_item_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="10dip"
+            android:text="@string/tea_fans_get_coin"
+             android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="@dimen/textsize_middle_1" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/tea_fans_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:divider="@color/theme_driver_color"
+        android:dividerHeight="1dip" >
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="16dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginRight="6dip"
+            android:text="@string/tea_fans_total"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="@dimen/textsize_middle" />
+
+        <TextView
+            android:id="@+id/tea_fans_total"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="111122银币"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/tea_fans_share"
+        style="@style/all_btn_orange_all_screen"
+        android:text="@string/tea_fans_share" />
+
+</LinearLayout>

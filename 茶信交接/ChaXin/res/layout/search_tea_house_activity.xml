@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/tea_mall_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dip"
+            android:background="@android:color/transparent"
+            android:padding="4dip"
+            android:src="@drawable/back" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dip"
+            android:background="@drawable/tea_mall_search_bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dip"
+                android:layout_marginLeft="4dip"
+                android:src="@drawable/search_gray" />
+
+            <EditText
+                android:id="@+id/tea_mall_edittext_search"
+                style="@style/set_edittext_style_editor_address"
+                android:layout_height="fill_parent"
+                android:imeOptions="actionSend"
+                android:singleLine="true"
+                android:focusable="true"
+                android:background="@drawable/tea_mall_search_bg2"
+               android:textSize="@dimen/textsize_middle"
+                android:hint="@string/my_beauty_search_tea_house" />
+        </LinearLayout>
+    </LinearLayout>
+    
+
+    <ListView 
+        android:id="@+id/search_tea_house_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        ></ListView>
+    
+    
+    
+</LinearLayout>

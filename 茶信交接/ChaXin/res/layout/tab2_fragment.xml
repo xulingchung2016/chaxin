@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/homepager"
+        layout="@layout/all_actionbar_homepager" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homepager"
+        android:layout_marginBottom="40dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:src="@drawable/shop_car" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_car_is_null"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shop_car_bg"
+            android:text="@string/shop_go_to_shop"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab2_rl_settle"
+        android:layout_width="fill_parent"
+        android:layout_height="42dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_marginBottom="1.6dip"
+        
+         >
+
+        <CheckBox
+            android:id="@+id/shop_car_check_all_goods"
+            style="@style/check_all_shop_car"
+            android:layout_marginLeft="6dip"
+            android:text="@string/check_all"
+            
+            android:textSize="@dimen/textsize_middle"
+            android:layout_centerVertical="true" />
+        
+        <LinearLayout 
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center"          >
+            
+            
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/total"
+                android:textColor="@color/theme_text_normal_color_gary"
+                android:textSize="@dimen/textsize_middle"
+                />
+            
+            
+            <TextView 
+                android:id="@+id/tab2_money_check_goods"
+                   android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥240.00"
+                android:textColor="@color/theme_text_normal_color_red"
+                android:textSize="@dimen/textsize_middle"
+                
+                />
+            
+            
+        </LinearLayout>
+        
+        
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@color/red"
+            android:textColor="@color/white"
+           android:text="结算(1)"
+            android:paddingLeft="12dip"
+            android:paddingRight="12dip"
+            android:textSize="@dimen/textsize_middle"
+            android:layout_alignParentRight="true"
+            />
+        
+        
+        
+        
+    </RelativeLayout>
+
+    <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/tab2_swipw_menu_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homepager"
+        android:layout_above="@id/tab2_rl_settle"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/theme_text_normal_color_gary"
+        android:dividerHeight="0.6dip" />
+
+</RelativeLayout>

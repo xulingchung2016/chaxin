@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!--
+         <com.baidu.mapapi.map.MapView 
+        android:id="@+id/baidu_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        />
+    -->
+
+    <com.amap.api.maps.MapView 
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/tea_space_5"
+        android:paddingLeft="@dimen/tea_space_10"
+        android:paddingRight="@dimen/tea_space_10"
+        android:paddingTop="@dimen/tea_space_5" >
+
+        <LinearLayout
+            android:id="@+id/bot_layout_up"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_GPS"
+            android:background="@drawable/search_frame"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/tea_space_8" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/start_hint"
+                android:textSize="@dimen/textsize_middle" />
+
+            <TextView
+                android:id="@+id/tv_startPoint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="@dimen/tea_space_5"
+                android:singleLine="true"
+                android:text="@string/my_location"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_middle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/bot_layout_up"
+            android:layout_alignRight="@+id/bot_layout_up"
+            android:layout_below="@+id/bot_layout_up"
+            android:background="@drawable/search_frame"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/tea_space_8" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/end_hint"
+                android:textSize="@dimen/textsize_middle" />
+
+            <TextView
+                android:id="@+id/tv_endPoint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:padding="@dimen/tea_space_5"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_middle" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_GPS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/tea_space_10"
+            android:background="@drawable/but_orange_small"
+            android:text="@string/navigation"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_middle" />
+    </RelativeLayout>
+
+</LinearLayout>

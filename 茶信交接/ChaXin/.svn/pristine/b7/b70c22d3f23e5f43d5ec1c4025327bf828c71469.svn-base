@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/white"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:orientation="horizontal" >
+    
+    
+    
+    <ImageView 
+        android:id="@+id/shop_imageview"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/cha"
+        android:background="@drawable/shape_imageview_kk"
+        android:layout_marginTop="8dip"
+        android:layout_marginLeft="8dip"
+        android:layout_marginBottom="8dip"
+        android:scaleType="fitXY"
+        />
+    
+    
+    <TextView 
+        android:id="@+id/shop_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="书香茶叶店"
+        android:layout_marginLeft="8dip"
+        android:textColor="@color/theme_text_normal_color_black"
+        android:textSize="@dimen/textsize_middle"
+        />
+    
+    
+
+</LinearLayout>

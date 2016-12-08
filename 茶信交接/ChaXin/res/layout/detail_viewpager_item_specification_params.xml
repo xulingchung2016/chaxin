@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="6dip"
+        android:text="@string/detail_viewpager_main_params"
+        android:textColor="@color/theme_text_normal_color_black"
+        android:textSize="@dimen/textsize_middle" />
+
+    <LinearLayout
+        style="@style/detail_linear_main_params"
+        android:layout_marginTop="1dip" >
+
+        <TextView
+            style="@style/detail_textview1_main_params"
+            android:text="@string/detail_viewpager_sort_name" />
+
+        <TextView
+            android:id="@+id/detail_viewpager_sort_name"
+            style="@style/detail_textview2_main_params"
+            android:text="铁观音" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/detail_linear_main_params" >
+
+        <TextView
+            style="@style/detail_textview1_main_params"
+            android:text="@string/detail_viewpager_sort" />
+
+        <TextView
+            android:id="@+id/detail_viewpager_sort"
+            style="@style/detail_textview2_main_params"
+            android:text="铁观音" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/detail_linear_main_params" >
+
+        <TextView
+            style="@style/detail_textview1_main_params"
+            android:text="@string/detail_viewpager_in_where" />
+
+        <TextView
+            android:id="@+id/detail_viewpager_in_where"
+            style="@style/detail_textview2_main_params"
+            android:text="铁观音" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/detail_linear_main_params" >
+
+        <TextView
+            style="@style/detail_textview1_main_params"
+            android:text="@string/detail_viewpager_our_country_or_other_country" />
+
+        <TextView
+            android:id="@+id/detail_viewpager_our_country_or_other_country"
+            style="@style/detail_textview2_main_params"
+            android:text="铁观音" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/detail_linear_main_params" >
+
+        <TextView
+            style="@style/detail_textview1_main_params"
+            android:text="@string/detail_viewpager_shelf_life" />
+
+        <TextView
+            android:id="@+id/detail_viewpager_shelf_life"
+            style="@style/detail_textview2_main_params"
+            android:text="铁观音" />
+    </LinearLayout>
+    
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="6dip"
+        android:text="@string/detail_picture_text_specification_parameter"
+        android:textColor="@color/theme_text_normal_color_black"
+        android:textSize="@dimen/textsize_middle" />
+
+    <LinearLayout
+        style="@style/detail_linear_main_params"
+         >
+
+        <TextView
+            style="@style/detail_textview1_main_params"
+            android:text="@string/detail_viewpager_packing" />
+
+        <TextView
+            android:id="@+id/detail_viewpager_packing"
+            style="@style/detail_textview2_main_params"
+            android:text="铁观音" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/detail_linear_main_params" >
+
+        <TextView
+            style="@style/detail_textview1_main_params"
+            android:text="@string/detail_viewpager_net_weigth" />
+
+        <TextView
+            android:id="@+id/detail_viewpager_net_weigth"
+            style="@style/detail_textview2_main_params"
+            android:text="铁观音" />
+    </LinearLayout>
+    
+    
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="6dip"
+        android:layout_marginTop="1dip"
+        android:text="@string/detail_viewpager_other_params"
+        android:textColor="@color/theme_text_normal_color_black"
+        android:textSize="@dimen/textsize_middle" />
+
+    <LinearLayout
+        style="@style/detail_linear_main_params"
+        
+         android:layout_marginTop="1dip"
+         >
+
+        <TextView
+            style="@style/detail_textview1_main_params"
+            android:text="@string/detail_viewpager_storage_method" />
+
+        <TextView
+            android:id="@+id/detail_viewpager_storage_method"
+            style="@style/detail_textview2_main_params"
+            android:text="铁观音" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/detail_linear_main_params" >
+
+        <TextView
+            style="@style/detail_textview1_main_params"
+            android:text="@string/detail_viewpager_shengchanxukez" />
+
+        <TextView
+            android:id="@+id/detail_viewpager_shengchanxukez"
+            style="@style/detail_textview2_main_params"
+            android:text="铁观音" />
+    </LinearLayout>
+
+    
+
+</LinearLayout>

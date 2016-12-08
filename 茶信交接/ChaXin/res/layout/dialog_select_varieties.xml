@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000" >
+
+
+    <LinearLayout
+        android:id="@+id/layout_dialog"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tea_space_15" >
+
+            <ImageView
+                android:id="@+id/iv_dialog_select_varieties_icon"
+                android:layout_width="72dip"
+                android:layout_height="72dip"
+                android:scaleType="fitXY"
+                android:src="@drawable/cha" />
+
+            <TextView
+                android:id="@+id/tv_dialog_select_varieties_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/iv_dialog_select_varieties_icon"
+                android:layout_marginLeft="@dimen/tea_space_10"
+                android:layout_toRightOf="@+id/iv_dialog_select_varieties_icon"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_middle" />
+
+            <TextView
+                android:id="@+id/tv_dialog_select_varieties_chabi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_dialog_select_varieties_chabi_num"
+                android:layout_alignLeft="@+id/tv_dialog_select_varieties_title"
+                android:text="@string/tea_currency"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/textsize_small" />
+
+            <TextView
+                android:id="@+id/tv_dialog_select_varieties_chabi_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_dialog_select_varieties_icon"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/tv_dialog_select_varieties_chabi"
+                android:textColor="@color/redColor"
+                android:textSize="@dimen/textsize_middle" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/tea_dingzhong_order_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/theme_driver_color" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tea_space_15"
+            android:text="@string/variety"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_max" />
+
+        <GridView
+            android:id="@+id/gv_dialog_select_varieties"
+            android:layout_width="fill_parent"
+            android:paddingLeft="@dimen/tea_space_15"
+            android:paddingRight="@dimen/tea_space_15"
+            android:layout_height="wrap_content" 
+            android:numColumns="4"
+            android:listSelector="@android:color/transparent"
+            android:horizontalSpacing="5dip"
+            android:verticalSpacing="5dip"
+            android:cacheColorHint="@android:color/transparent">
+        </GridView>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/tea_space_15"
+            android:text="@string/amount"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_max" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/tea_space_15"
+            android:paddingRight="@dimen/tea_space_15">
+
+            <ImageView
+                android:id="@+id/iv_dialog_select_varieties_reduce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/reduce" />
+
+            <TextView
+                android:id="@+id/tv_dialog_select_varieties_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_dialog_select_varieties_reduce"
+                android:layout_alignTop="@+id/iv_dialog_select_varieties_reduce"
+                android:layout_toRightOf="@+id/iv_dialog_select_varieties_reduce"
+                android:gravity="center"
+                android:paddingLeft="@dimen/tea_space_8"
+                android:paddingRight="@dimen/tea_space_8"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_max" />
+
+            <ImageView
+                android:id="@+id/iv_dialog_select_varieties_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_dialog_select_varieties_amount"
+                android:src="@drawable/plus" />
+            
+            <Button
+                android:id="@+id/btn_dialog_select_varieties_gold_deposits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gold_deposits"
+                android:textSize="@dimen/textsize_middle"
+                android:textColor="#3d6afd"
+                android:layout_alignParentRight="true"
+                android:background="@null"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tea_space_15"
+            android:layout_marginRight="@dimen/tea_space_15"
+            android:layout_marginTop="@dimen/tea_space_10"
+            android:layout_marginBottom="@dimen/tea_space_10"
+            android:background="@drawable/selector_longbutton"
+            android:text="@string/order" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_cancel_round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/layout_dialog"
+        android:layout_alignRight="@+id/layout_dialog"
+        android:src="@drawable/cancel_round" />
+    
+</RelativeLayout>

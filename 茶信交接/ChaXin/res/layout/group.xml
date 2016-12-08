@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+             android:background="@color/grey_line"
+            android:orientation="horizontal" >
+    
+
+            <CheckBox
+                android:id="@+id/shop_car_item_check_all"
+                style="@style/all_check_button_shop_car" />
+
+            <TextView
+                android:id="@+id/shop_car_item_shop_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_max"
+                android:padding="8dip"
+                android:textColor="@color/blackColor"
+                android:text="书香茶叶店" />
+</LinearLayout>

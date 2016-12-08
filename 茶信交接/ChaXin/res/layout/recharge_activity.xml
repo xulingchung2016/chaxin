@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/all_actionbar"/>
+      <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                 android:textSize="@dimen/textsize_middle"
+                 android:layout_width="wrap_content"
+                android:text="充值金额：" />
+
+            <EditText
+                android:layout_marginLeft="6dip"
+                 android:hint="请输入金额（整数（元）"
+                android:id="@+id/et_bank_people"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                style="@style/receiver_address_edittext" 
+                android:textSize="@dimen/textsize_middle"
+                />
+        </LinearLayout>
+    
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@color/white"
+            android:padding="3dip"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:text="@string/comfirm_order_pay_style" />
+    
+    <LinearLayout
+        android:id="@+id/recharge_linear_zhifubao"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:padding="6dip"
+                android:src="@drawable/zhifubao" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_weight="1"
+                android:text="@string/comfirm_order_choice_pay_style_zhifubao"
+                android:textColor="@color/theme_text_normal_color_black"
+                android:textSize="@dimen/textsize_middle" />
+
+            <ImageView
+                android:id="@+id/recharge_zhifubao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:src="@drawable/choice_green" />
+        </LinearLayout>
+        <LinearLayout
+             android:id="@+id/recharge_linear_weixin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@color/white"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:padding="6dip"
+                android:src="@drawable/icon48_appwx_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_weight="1"
+                android:text="微信支付"
+                android:textColor="@color/theme_text_normal_color_black"
+                android:textSize="@dimen/textsize_middle" />
+
+            <ImageView
+                 android:id="@+id/recharge_weixin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:src="@drawable/choice_green"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+             android:id="@+id/recharge_linear_yinlian"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@color/white"
+            android:visibility="invisible"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:padding="6dip"
+                android:src="@drawable/yinlian" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_weight="1"
+                android:text="@string/comfirm_order_choice_pay_style_union"
+                android:textColor="@color/theme_text_normal_color_black"
+                android:textSize="@dimen/textsize_middle" />
+
+            <ImageView
+                 android:id="@+id/recharge_yinlian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dip"
+                android:src="@drawable/choice_green"
+                android:visibility="gone" />
+        </LinearLayout>
+        
+        
+        
+        <Button 
+            android:id="@+id/recharge_go_pay"
+            android:text="@string/recharge_go_pay"
+            style="@style/all_btn_orange_all_screen"
+            />
+    
+
+</LinearLayout>

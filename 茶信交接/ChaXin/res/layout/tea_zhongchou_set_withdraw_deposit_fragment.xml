@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray" >
+    <RelativeLayout
+        android:id="@+id/user_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+        
+        <TextView 
+            android:id="@+id/user_id_text"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_text_color"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"
+            android:text="身份证" />
+        <EditText 
+            android:id="@+id/user_id_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_id_text"
+            android:layout_alignTop="@+id/user_id_text"
+            android:layout_toRightOf="@+id/user_id_text"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="18位身份证号码"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:textColor="@color/theme_text_color" />
+        
+        <View 
+            android:id="@+id/vertical_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/user_id_text"
+            android:background="@color/theme_text_normal_color_gary"/>
+        
+        <TextView 
+            android:id="@+id/userphone_text"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vertical_line"
+            android:textColor="@color/theme_text_color"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"
+            android:text="手机号" />
+        <EditText 
+            android:id="@+id/userphone_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/userphone_text"
+            android:layout_alignTop="@+id/userphone_text"
+            android:layout_toRightOf="@+id/userphone_text"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="手机号"
+            android:inputType="phone"
+            android:textSize="15sp"
+            android:textColor="@color/theme_text_color" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/user_password_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_info_layout"
+        android:background="@color/white"
+        android:layout_marginTop="10dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+        
+        <TextView 
+            android:id="@+id/user_password_text"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_text_color"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"
+            android:text="提现密码" />
+        <EditText 
+            android:id="@+id/userpassword_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_password_text"
+            android:layout_alignTop="@+id/user_password_text"
+            android:layout_toRightOf="@+id/user_password_text"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="输入提现密码"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColor="@color/theme_text_color" />
+        
+        <View 
+            android:id="@+id/vertical_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/user_password_text"
+            android:background="@color/theme_text_normal_color_gary"/>
+        
+        <TextView 
+            android:id="@+id/user_password_affirm_text"
+            android:layout_width="70dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vertical_line1"
+            android:textColor="@color/theme_text_color"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="15sp"
+            android:text="确认密码" />
+        <EditText 
+            android:id="@+id/userpassword_affirm_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_password_affirm_text"
+            android:layout_alignTop="@+id/user_password_affirm_text"
+            android:layout_toRightOf="@+id/user_password_affirm_text"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:hint="确认提现密码"
+            android:inputType="textPassword"
+            android:textSize="15sp"
+            android:textColor="@color/theme_text_color" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/set_withdraw_password_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_password_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/tea_cishan_long_bt_orange"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:text="完成" />
+
+
+</RelativeLayout>

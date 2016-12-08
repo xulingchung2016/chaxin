@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_actionbar_background_color"
+    android:padding="5dip" >
+
+    <ImageView
+        android:id="@+id/tea_zhongchou_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/tea_zhongchou_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/theme_actionbar_text_color"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/tea_zhongchou_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/actionbar_right_more"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/tea_zhongchou_rule_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:background="@android:color/transparent"
+	    android:layout_toLeftOf="@+id/tea_zhongchou_more"
+	    android:layout_alignBottom="@+id/tea_zhongchou_more"
+        android:textColor="@color/theme_actionbar_text_color"
+        android:textSize="15sp"
+        android:text="规则"
+        android:visibility="invisible" />
+    
+
+</RelativeLayout>

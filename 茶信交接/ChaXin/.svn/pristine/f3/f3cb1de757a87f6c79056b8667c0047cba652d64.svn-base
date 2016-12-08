@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="8dip"
+    android:paddingRight="8dip"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        style="@style/all_linear_fw_vertical"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/search_tea_house_name"
+            style="@style/all_tv_wrap_middle_black"
+            android:text="万豪茶艺馆" />
+
+        <TextView
+            android:id="@+id/search_tea_house_address"
+            style="@style/all_tv_wrap_small_black"
+            android:layout_marginLeft="4dip"
+            android:layout_marginTop="2dip"
+            android:text="地址：宝安区观澜银新村万豪茶艺馆撒打发萨菲" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/my_beauty_appcation"
+        style="@style/all_button_ww_orange"
+        android:layout_marginRight="3dip"
+        android:text="@string/my_beauty_appcation" />
+
+</LinearLayout>

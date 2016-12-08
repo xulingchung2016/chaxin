@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="5dip" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="温馨港湾"
+            android:textColor="@color/theme_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="2015-07-20 17:16"
+            android:textColor="@color/theme_text_normal_color_light_gary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/donate_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:text="50茶币"
+            android:textColor="@color/theme_text_normal_color_orange"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/donate_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:layout_below="@+id/donate_nu"
+            android:layout_marginTop="5dp"
+            android:text="捐献成功"
+            android:textColor="@color/theme_text_normal_color_light_gary"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

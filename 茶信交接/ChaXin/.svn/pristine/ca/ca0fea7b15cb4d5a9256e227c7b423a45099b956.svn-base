@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include android:id="@+id/ll_top" layout="@layout/all_actionbar"/>
+
+    <Button
+        android:id="@+id/receive_address_add_"
+        style="@style/all_btn_orange_all_screen"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dip"
+        android:text="@string/add_receive_address" />
+
+    <ListView
+        android:id="@+id/receive_address_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_top"
+        android:layout_above="@id/receive_address_add_"
+        android:cacheColorHint="@android:color/transparent" >
+    </ListView>
+
+</RelativeLayout>

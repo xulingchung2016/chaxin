@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/all_actionbar"/>
+    
+    <LinearLayout
+        
+        style="@style/my_four_linear_horizontal" >
+
+        
+
+        <EditText 
+            android:id="@+id/change_nice_name_edit_name"
+            style="@style/set_edittext_style_editor_address"
+            android:hint="@string/input_nice_name"
+            android:layout_marginLeft="6dip"
+            />
+        
+        
+        <ImageView 
+            android:id="@+id/change_nice_name_img_clean_name"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:src="@drawable/chacha"
+            android:layout_marginRight="6dip"
+            
+            />
+        
+        
+       
+    </LinearLayout>
+    
+    
+    
+    <Button 
+       style="@style/all_btn_orange_all_screen"
+         android:id="@+id/change_nice_name_btn_save_name"
+        android:text="@string/save"
+        
+        />
+    
+    
+    
+
+</LinearLayout>

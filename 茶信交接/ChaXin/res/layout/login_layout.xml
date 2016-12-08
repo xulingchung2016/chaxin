@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <include layout="@layout/login_actionbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="8dip" >
+        <TextView
+            android:id="@+id/login_phoneNoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dip"
+            android:textSize="@dimen/textsize_title" 
+            android:text="账号" />
+        
+        <EditText
+            android:id="@+id/login_phoneNoEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_title"
+            android:inputType="number"
+            android:gravity="left"
+            android:hint="填写注册的手机号码" 
+            android:ems="10">
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+    
+    <View
+        style="@style/all_divider_all_screen"
+        android:layout_height="4dip" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true" 
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="8dip">
+        <TextView
+            android:id="@+id/login_pwdText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dip"
+            android:textSize="@dimen/textsize_title" 
+            android:text="密码" />
+        
+        <EditText
+            android:id="@+id/login_pwdEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:singleLine="true"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_title"
+            android:hint="请输入6-20位密码"
+            android:ems="10" >
+        </EditText>
+
+    </LinearLayout>
+    
+    <View
+        style="@style/all_divider_all_screen"
+        android:layout_height="60dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/login_bnt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_title"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:background="@drawable/btn_bg"
+            android:layout_marginBottom="16dip"
+            android:textColor="@color/white"
+            android:text="登录" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dip"
+        android:layout_marginRight="16dip" >
+
+        <TextView
+            android:id="@+id/fast_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/redColor"
+            android:text="快速注册" />
+
+        <TextView
+            android:id="@+id/forget_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/redColor"
+            android:text="忘记密码？" />
+
+    </RelativeLayout>
+
+</LinearLayout>

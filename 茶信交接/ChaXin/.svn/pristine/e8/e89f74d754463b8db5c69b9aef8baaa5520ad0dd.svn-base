@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+    
+    <View style="@style/personal_center_view_divider"
+        
+        android:layout_marginLeft="0dip"
+         />
+
+    <LinearLayout
+        style="@style/personal_center_linear"
+        android:layout_marginTop="1dip" >
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/sex" />
+
+            <EditText
+                android:id="@+id/become_sex"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/age" />
+
+            <EditText
+                android:id="@+id/become_age"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/become_beauty_in_tea_house" />
+
+            <EditText
+                android:id="@+id/become_beauty_in_tea_house"
+                style="@style/receiver_address_edittext"
+                android:hint="@string/become_beauty_in_tea_house_hint" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/become_beauty_id" />
+
+            <EditText
+                android:id="@+id/become_beauty_id"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/all_linear_fw_horizontal"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="12dip" >
+
+        <LinearLayout
+            style="@style/become_linear"
+            android:layout_marginRight="10dip" >
+
+            <Button
+                android:id="@+id/become_beauty_positive"
+                style="@style/become_btn"
+                android:text="@string/upload" />
+
+            <TextView
+                style="@style/become_textview"
+                android:text="@string/become_beauty_positive" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/become_linear"
+            android:layout_marginLeft="10dip" >
+
+            <Button
+                android:id="@+id/become_beauty_ID_opposite"
+                style="@style/become_btn"
+                android:text="@string/upload" />
+
+            <TextView
+                style="@style/become_textview"
+                android:text="@string/become_beauty_ID_opposite" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        style="@style/all_linear_fw_horizontal"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:gravity="center"
+        android:layout_marginTop="12dip" >
+
+        
+            <LinearLayout
+            style="@style/become_linear"
+            android:layout_marginRight="10dip" >
+
+            <Button
+                android:id="@+id/become_beauty_vqc_posotive"
+               
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="78dip"
+                android:paddingRight="78dip"
+                android:paddingTop="38dip"
+                android:background="@drawable/shape_become"
+                android:paddingBottom="38dip"
+                android:textSize="@dimen/textsize_middle"
+                
+                android:text="@string/upload" />
+
+            <TextView
+                style="@style/become_textview"
+                android:text="@string/become_beauty_vqc_posotive" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    
+     <LinearLayout
+        style="@style/all_linear_fw_horizontal"
+        android:layout_marginLeft="12dip"
+        android:layout_marginRight="12dip"
+        android:gravity="center"
+        android:layout_marginTop="12dip" >
+
+        
+         <CheckBox 
+             android:id="@+id/become_beauty_exemption_agreement"
+             style="@style/all_check_button_square_drawable_left"
+             android:text="@string/become_beauty_exemption_agreement"
+             
+             />
+           
+
+    </LinearLayout>
+    
+    
+    
+
+    <Button
+        android:id="@+id/become_beauty_right_now"
+        style="@style/all_btn_orange_all_screen"
+        android:layout_marginBottom="12dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/become_beauty_right_now" />
+
+</LinearLayout>
+</ScrollView>

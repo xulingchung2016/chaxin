@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/modify_address_actionbar" />
+
+    <LinearLayout
+        style="@style/personal_center_linear"
+        android:layout_marginTop="1dip"
+        >
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/address_manager_person" />
+
+            <EditText
+               android:hint="@string/address_manager_person_hint"
+                android:id="@+id/address_manager_person"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+        
+        
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/address_manager_phone" />
+
+            <EditText
+                 android:hint="@string/address_manager_phone_hint"
+                android:id="@+id/address_manager_phone"
+                android:inputType="phone"
+                android:maxLength="11"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+        
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/address_manager_zip_code" />
+
+            <EditText
+                 android:hint="@string/address_manager_zip_code"
+                android:id="@+id/address_manager_zip_code"
+                android:inputType="number"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+        
+        <LinearLayout android:id="@+id/ll_address" style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/address_manager_address" />
+
+            <TextView
+                 android:hint="@string/address_manager_address_message"
+                android:id="@+id/address_manager_address"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+        
+        
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/address_manager_detail_address" />
+
+            <EditText
+                android:hint="@string/address_manager_detail_address_hint"
+                android:id="@+id/address_manager_detail_address"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+        
+         <View style="@style/personal_center_view_divider" />
+        
+        <LinearLayout style="@style/receiver_address_linear" >
+            
+            
+            <CheckBox 
+                android:id="@+id/address_manager_detail_default_address"
+                style="@style/all_check_button_square"
+                android:layout_marginLeft="12dip"/>
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/set_default_address"
+                android:layout_width="wrap_content"
+                android:textColor="@color/theme_text_normal_color_black"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    
+    <Button 
+        android:id="@+id/address_manager_detail_btn_save"
+        
+        android:text="@string/save"
+        style="@style/all_btn_orange_all_screen"/>
+    
+</LinearLayout>

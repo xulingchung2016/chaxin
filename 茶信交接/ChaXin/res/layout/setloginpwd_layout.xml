@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/login_actionbar" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="8dip" >
+        <TextView
+            android:id="@+id/setpwd_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dip"
+            android:textSize="@dimen/textsize_title" 
+            android:text="密码        " />
+        
+        <EditText
+            android:id="@+id/setpwd_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_title"
+            android:inputType="textPassword"
+            android:gravity="left"
+            
+            android:hint="填写登录密码"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+    
+    <View
+        style="@style/all_divider_all_screen"
+        android:layout_height="4dip" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginBottom="8dip">
+        <TextView
+            android:id="@+id/setpwd_comfortText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="32dip"
+            android:textSize="@dimen/textsize_title"
+            android:text="确认密码" />
+        
+        <EditText
+            android:id="@+id/setpwd_comfortEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_title"
+            android:inputType="textPassword"
+            android:gravity="left"
+            android:hint="再次确认密码"
+            android:ems="10" >
+        </EditText>
+
+    </LinearLayout>
+    
+    <View
+        style="@style/all_divider_all_screen"
+        android:layout_height="60dip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/setpwd_bnt_ok"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_title"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginBottom="16dip"
+            android:background="@drawable/btn_bg"
+            android:textColor="@color/white"
+            android:text="完成" />
+    </LinearLayout>
+
+</LinearLayout>

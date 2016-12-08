@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+    
+    <include 
+        layout="@layout/all_actionbar"
+        
+        />
+    
+    
+    
+
+        <RadioGroup
+            android:id="@+id/car_friend_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/collect_goods"
+                style="@style/all_radiobutton_weigth1"
+                android:checked="true"
+                android:text="@string/goods" />
+            <View android:layout_width="1dip" android:layout_height="fill_parent" android:background="@drawable/yy_sharp_sha"/>
+
+            <RadioButton
+               android:id="@+id/collect_beauty"
+               style="@style/all_radiobutton_weigth1"
+                android:text="@string/beauty" />
+            
+            
+            <RadioButton
+               android:id="@+id/collect_shop"
+               style="@style/all_radiobutton_weigth1"
+               android:visibility="gone"
+                android:text="@string/shop" />
+            
+            
+        </RadioGroup>
+
+
+    <FrameLayout
+        android:layout_marginTop="1dip"
+        android:id="@+id/car_friend_contains"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </FrameLayout>
+
+</LinearLayout>

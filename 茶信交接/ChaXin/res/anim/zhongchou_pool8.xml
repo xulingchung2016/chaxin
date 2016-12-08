@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/pool_0_1" />
+    <item android:duration="100" android:drawable="@drawable/pool_0_1_2" />
+    <item android:duration="100" android:drawable="@drawable/pool_0_1_3" />
+    <item android:duration="100" android:drawable="@drawable/pool_0_2" />
+    <item android:duration="100" android:drawable="@drawable/pool_0_3" />
+    <item android:duration="100" android:drawable="@drawable/pool_0_4" />
+    <item android:duration="100" android:drawable="@drawable/pool_1" />
+    <item android:duration="100" android:drawable="@drawable/pool_2" />
+    <item android:duration="100" android:drawable="@drawable/pool_3" />
+    <item android:duration="100" android:drawable="@drawable/pool_4" />
+    <item android:duration="100" android:drawable="@drawable/pool_5" />
+    <item android:duration="100" android:drawable="@drawable/pool_6" />
+    <item android:duration="100" android:drawable="@drawable/pool_7" />
+    <item android:duration="100" android:drawable="@drawable/pool_8" />
+</animation-list>

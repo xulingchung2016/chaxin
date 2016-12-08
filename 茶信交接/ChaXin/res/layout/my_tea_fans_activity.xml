@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/all_actionbar"/>
+    
+
+    <LinearLayout
+        android:id="@+id/my_fans_thanks"
+        style="@style/my_four_linear_horizontal"
+        android:layout_marginTop="1dip" >
+
+        <ImageView
+            style="@style/my_four_imageview"
+            android:src="@drawable/my_fans_thanks" />
+
+        <TextView
+            style="@style/my_four_textview_horizontal"
+            android:text="@string/my_thanksgving" />
+    </LinearLayout>
+    
+    
+     <LinearLayout
+        android:id="@+id/my_fans_"
+        style="@style/my_four_linear_horizontal"
+        
+        android:layout_marginTop="1dip" >
+
+        <ImageView
+            style="@style/my_four_imageview"
+            android:src="@drawable/my_fans_" />
+
+        <TextView
+            style="@style/my_four_textview_horizontal"
+            android:text="@string/my_fans_" />
+    </LinearLayout>
+    
+</LinearLayout>

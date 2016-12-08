@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+       <ImageView
+                android:id="@+id/goods_listview_item_imageview"
+                android:layout_width="64dip"
+                android:layout_height="64dip"
+                android:padding="6dip"
+                android:scaleType="fitXY"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cha_cha" />
+
+
+              
+
+
+                          <TextView
+                    android:id="@+id/goods_listview_item_tea_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dip"
+                      android:layout_toRightOf="@+id/goods_listview_item_imageview"
+                    android:maxLines="2"
+                    
+                    android:text="红茶"
+                    android:textColor="@color/theme_text_normal_color_black"
+                    android:textSize="@dimen/textsize_middle_1" />
+                          
+                            <TextView
+                    android:id="@+id/goods_listview_item_tea_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dip"
+                    android:text="￥0.00"
+                    android:layout_alignBottom="@+id/goods_listview_item_imageview"
+                      android:layout_toRightOf="@+id/goods_listview_item_imageview"
+                    android:layout_marginTop="5dip"
+                    android:textColor="@color/theme_text_normal_color_red"
+                    android:textSize="@dimen/textsize_middle" />
+
+                       
+
+                       
+
+					 <TextView
+                            android:id="@+id/confirm_order_num"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:paddingLeft="8dip"
+                            android:paddingRight="8dip"
+                            android:text="x  1"
+                            android:layout_alignBottom="@+id/goods_listview_item_tea_price"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@color/theme_text_normal_color_gary"
+                            android:textSize="@dimen/textsize_middle" />
+              
+    
+
+</RelativeLayout>

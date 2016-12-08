@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <LinearLayout
+        android:id="@+id/my_cash_num"
+        style="@style/my_four_linear_horizontal"
+        android:layout_marginTop="1dip"
+        android:paddingBottom="@dimen/all_8_dip"
+        android:paddingTop="@dimen/all_8_dip" >
+
+        <TextView
+            android:id="@+id/tv_bank"
+            style="@style/my_four_textview_horizontal"
+            android:paddingBottom="@dimen/all_4_dip"
+            android:paddingLeft="@dimen/all_8_dip"
+            android:paddingTop="@dimen/all_4_dip"
+            android:text=""
+            android:textColor="@color/theme_text_normal_color_black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/withdraw_turn_out_money"
+        style="@style/my_four_linear_horizontal"
+        android:layout_marginTop="1dip"
+        android:paddingBottom="@dimen/all_8_dip"
+        android:paddingTop="@dimen/all_8_dip" >
+
+        <TextView
+            style="@style/my_four_textview_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_weight="0"
+            android:paddingBottom="@dimen/all_4_dip"
+            android:paddingLeft="@dimen/all_8_dip"
+            android:paddingTop="@dimen/all_4_dip"
+            android:text="@string/withdraw_turn_out_money"
+            android:textColor="@color/theme_text_normal_color_black" />
+
+        <EditText
+            android:id="@+id/withdraw_et_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="10dip"
+            android:background="@color/white"
+            android:inputType="number"
+            
+            android:hint="@string/withdraw_turn_out_money_hint"
+            android:paddingBottom="@dimen/all_4_dip"
+            android:paddingTop="@dimen/all_4_dip"
+            android:textSize="@dimen/textsize_small" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/withdraw_comfirm_turn_out"
+        style="@style/all_btn_orange_all_screen"
+        android:text="@string/withdraw_comfirm_turn_out" />
+
+</LinearLayout>

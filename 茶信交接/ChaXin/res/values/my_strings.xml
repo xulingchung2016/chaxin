@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tab1">首页</string>
+    <string name="tab2">购物车</string>
+    <string name="tab3">我的</string>
+    <string name="tab4"></string>
+    <string name="tab5"></string>
+    <string name="app_name">茶信</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">昵称</string>
+    <string name="sex">性别</string>
+    <string name="age">年龄</string>
+    <string name="address">地址</string>
+    <string name="back">返回</string>
+    <string name="comfirm">确定</string>
+    <string name="comfirm1">确认</string>
+    <string name="next">下一步</string>
+    <string name="add">添加</string>
+    <string name="submit">提交</string>
+    <string name="agree">同意</string>
+    <string name="refuse">拒绝</string>
+    <string name="map">地图</string>
+    <string name="search">搜索</string>
+    <string name="no_named">未命名</string>
+    <string name="sorry_no_result">抱歉，未找到结果</string>
+    <string name="can_not_null">不能为空</string>
+    <string name="phone_num">手机号</string>
+    <string name="verify_num">验证码</string>
+    <string name="verify_num_send_success">验证码发送成功</string>
+    <string name="verify_num_send_fail">验证码发送失败，请稍后再试。</string>
+    <string name="phoneerror">手机格式有误</string>
+    <string name="password1">密码</string>
+    <string name="confirm_password">确定密码</string>
+    <string name="password_not_same">两次输入密码不相同</string>
+    <string name="more">更多</string>
+    <string name="rule">规则</string>
+    <string name="sign_in">签到</string>
+    <string name="set">设置</string>
+    <string name="save">保存</string>
+    <string name="delete">删除</string>
+    <string name="exit">退出</string>
+    <string name="ok">确定</string>
+    <string name="collect">收藏</string>
+    <string name="sort">分类</string>
+    <string name="message">消息</string>
+    <string name="upload">上传</string>
+
+    <!-- 我的茶粉 -->
+    <string name="tea_fans_your_direct_fans">您直接发展的茶粉</string>
+    <string name="tea_fans_begin_time">开始时间</string>
+    <string name="tea_fans_finish_time">结束时间</string>
+    <string name="tea_fans_dao">到</string>
+    <string name="tea_fans_search">搜索</string>
+    <string name="tea_fans_tip">你直接发展的粉丝构成了第一层，他们在发展的粉丝构成了其它层，累计截至昨日统计如下：</string>
+    <string name="tea_fans_recommended_fans">推荐粉丝</string>
+    <string name="tea_fans_qualified_fans">合格粉丝</string>
+    <string name="tea_fans_get_coin">获得银币</string>
+    <string name="tea_fans_total">总计:</string>
+    <string name="tea_fans_coin">银币</string>
+    <string name="tea_fans_share">分享赚银币</string>
+    <string name="my_fans_">我的茶粉</string>
+    <string name="my_thanksgving">我要感恩</string>
+    <string name="i_want_phone_hint">请填写邀请您的人的手机号</string>
+    <string name="i_want_phone_right_now">立即感恩</string>
+    <string name="btn_save">保存</string>
+
+    <!-- 茶粉明细 -->
+    <string name="tea_fans_detail">茶粉明细</string>
+    <string name="tea_fans_already_verity">已验证</string>
+    <string name="tea_fans_not_verity">未验证</string>
+    <string name="tea_fans_qualified">已发展合格粉丝：</string>
+    <string name="tea_fans_not_phone_verity">未手机验证粉丝：</string>
+    <string name="tea_fans_tip_verity">提醒验证</string>
+
+    <!-- 选择性别 -->
+    <string name="choice_sex">选择性别</string>
+    <string name="boy">男</string>
+    <string name="gril">女</string>
+    <string name="secrecy">保密</string>
+    <string name="buy_num_not_less_than_one">购买数量不能小于1件</string>
+
+    <!-- 订单详情 -->
+    <string name="order_detail">订单详情</string>
+    <string name="order_detail_receiver">收货人:</string>
+    <string name="order_detail_order_num">订单号:</string>
+    <string name="order_detail_courier_num">快递单号:</string>
+    <string name="order_detail_time">下单时间:</string>
+    <string name="order_detail_money">订单金额:</string>
+    <string name="order_detail_contact">联系客服</string>
+    
+    
+    <!-- 我的茶丽人 -->
+    <string name="become_beauty">成为茶丽人</string>
+   <string name="become_beauty_in_tea_house">所属茶馆编号</string>
+   <string name="become_beauty_in_tea_house_hint">请输入茶馆编号</string>
+    <string name="become_beauty_id">资格证编号</string>
+    <string name="become_beauty_ID_opposite">身份证反面</string>
+    <string name="become_beauty_positive">身份证正面</string>
+    <string name="become_beauty_vqc_posotive">茶艺师职业资格证正面</string>
+    <string name="become_beauty_exemption_agreement">免责协议</string>
+    <string name="become_beauty_right_now">马上申请</string>
+    <string name="my_beauty_">我是茶丽人</string>
+    <string name="my_beauty_service">丽人服务</string>
+    <string name="my_beauty_profile">丽人资料</string>
+    <string name="my_beauty_yuyue">我的预约</string>
+    <string name="my_beauty_can_appointment">可预约时间</string>
+    <string name="my_beauty_today">今天</string>
+    <string name="my_beauty_allday">全天</string>
+    <string name="my_beauty_default_can_appointment_time">默认每天可预约时间</string>
+    <string name="my_beauty_default_cant_appointment_time">默认每日不可预约时间</string>
+    <string name="my_beauty_service_range">服务范围</string>
+    <string name="my_beauty_service_price">服务价格</string>
+    <string name="my_beauty_service_range_hint">请选择服务范围，可选多个区域</string>
+    <string name="my_beauty_appcation">申请</string>
+    <string name="my_beauty_search_tea_house">搜索茶馆</string>
+   
+   <string name="my_beauty_profile_id">编号</string>
+   <string name="my_beauty_profile_level">等级</string>
+   <string name="my_beauty_profile_grow_value">成长值</string>
+   
+   <string name="my_beauty_profile_appcation_tea_house">申请加入茶馆</string>
+   <string name="my_beauty_profile_sign">个人介绍</string>
+    <string name="my_beauty_profile_sign_detail">ta好懒，竟然什么都不写</string>
+    <string name="become_beauty_please_agree_application">请同意免责声明</string>
+    
+
+    <!-- 设置 -->
+    <string name="set_person_data">个人中心</string>
+    <string name="set_account_manager">账户管理</string>
+    <string name="set_message_remind">消息提醒</string>
+    <string name="set_clear_cache">清除缓存</string>
+    <string name="set_about_chaxin">关于茶信</string>
+    <string name="set_pl">评论</string>
+    <string name="set_exit">退出</string>
+    <string name="set_reset_password">重置密码</string>
+    <string name="set_reset_login_password">重置密码</string>
+    <string name="set_reset_trade_password">重置交易密码</string>
+    <string name="set_id_card">身份证</string>
+    <string name="set_phone_num">手机号</string>
+    <string name="set_id_card_hint">18位身份证号码</string>
+    <string name="new_old_password">原密码</string>
+    <string name="new_password">新密码</string>
+    <string name="new_old_password_hint">填写原始登陆密码</string>
+    <string name="new_old_password2_hint">填写原密码</string>
+    <string name="new_confirm_password">确认密码</string>
+    <string name="new_password_hint">填写新密码</string>
+    <string name="new_confirm_password_hint">再次确认密码</string>
+    <string name="new_old_finish">完成</string>
+    <string name="user_manager_change_password">修改密码</string>
+    <string name="user_manager_change_phone">修改手机号码</string>
+    <string name="bank_card_manager_add_bank_card">添加银行卡</string>
+    <string name="person_data_head_picture">头像</string>
+    <string name="person_data_nice_name">昵称</string>
+    <string name="person_data_sex">性别</string>
+    <string name="person_data_receive_goods_manager">收货地址管理</string>
+    <string name="set_default_address">设置为默认地址</string>
+    <string name="input_nice_name">请输入昵称</string>
+    <string name="add_bank_card">添加银行卡</string>
+    <string name="user_manager_bank_card_manager">银行卡管理</string>
+    <string name="change_login_pw">修改登录密码</string>
+    <string name="change_money_pw">修改支付密码</string>
+
+    <!-- 我的现金 -->
+    <string name="my_cash_">我的现金</string>
+    <string name="my_cash_recharge">充值</string>
+    <string name="my_cash_withdraw">提现</string>
+    <string name="my_cash_income_detail">收支明细</string>
+    <string name="my_cash_all">全部</string>
+    <string name="my_cash_expenditure">收入</string>
+    <string name="my_cash_income">支出</string>
+    <string name="recharge_zhifubao_pay">支付宝支付</string>
+    <string name="recharge_yinlian_pay">银联支付</string>
+    <string name="recharge_go_pay">去支付</string>
+    <string name="my_cash_add_card">添加银行卡</string>
+    <string name="add_card_account_holder">开户人</string>
+    <string name="add_card_num">卡号</string>
+    <string name="add_card_account_bank">开户银行</string>
+    <string name="add_card_vaildate">有效期</string>
+    <string name="add_card_phone">手机号</string>
+    <string name="add_card_add">添加</string>
+    <string name="withdraw_turn_out_money">转出金额</string>
+    <string name="withdraw_turn_out_money_hint">请输入转出金额</string>
+    <string name="withdraw_comfirm_turn_out">确认转出</string>
+    <string name="withdraw_please_input_password">请输入提现密码</string>
+
+    <!-- 我的订单 -->
+
+    <string name="order_all">全部</string>
+    <string name="order_wait_pay">待付款</string>
+     <string name="order_wait_fh">待发货</string>
+    <string name="order_wait_received">待收货</string>
+    <string name="order_wait_comment">待评价</string>
+    <string name="comment">评价</string>
+    <string name="confirm_receive">确认收货</string>
+    <string name="pay">付款</string>
+    <string name="complain">投诉</string>
+
+    <!-- 投诉 -->
+    <string name="input_compaint_activity">填写你要投诉的事项</string>
+    <string name="input">提交</string>
+
+    <!-- 查退货 -->
+    <string name="query_exit_goods">查退货</string>
+    <string name="query_exit_money_go">钱款去向</string>
+
+    <!-- 申请退货 -->
+    <string name="exit_goods_reason">退货原因</string>
+    <string name="exit_goods_reason_hint">请选择退货原因</string>
+    <string name="exit_goods_money">退款金额</string>
+    <string name="exit_goods_instruction">退款说明</string>
+    <string name="exit_goods_instruction_hint">最多180字</string>
+    <string name="exit_goods_voucher_upload">上传凭证\n(最多三张)</string>
+    <string name="exit_goods_appcation">提交申请</string>
+
+    <!-- 欠款去向 -->
+    <string name="mgo_exit_money">退回现金余额</string>
+    <string name="mgo_exit_tea_money">退回茶币</string>
+
+    <!-- 个人中心 -->
+    <string name="personal_center_">个人中心</string>
+    <string name="add_receive_address">添加收货地址</string>
+    <string name="personal_center_address_manager">收货地址管理</string>
+    <string name="personal_center_gps_data_share">GPS数据共享</string>
+    <string name="personal_center_voice_tip">消息提示音</string>
+    <string name="personal_center_change_background">换背景</string>
+    <string name="personal_center_clean_cache">清除缓存</string>
+    <string name="personal_center_regard_ours">关于我们</string>
+    <string name="personal_center_feedback">意见反馈</string>
+    <string name="personal_center_sign">签名</string>
+    <string name="address_manager_person">收货人</string>
+    <string name="address_manager_phone">手机号码</string>
+    <string name="address_manager_zip_code">邮政编码</string>
+    <string name="address_manager_address">所在地区</string>
+    <string name="address_manager_detail_address">详细地址</string>
+    <string name="address_manager_delete_address">删除收货地址</string>
+    <string name="address_manager_detail_address_hint">街道门牌信息</string>
+    <string name="address_manager_address_message">地区信息</string>
+    <string name="address_manager_phone_hint">11位手机号</string>
+    <string name="address_manager_person_hint">名字</string>
+    <string name="personal_pic">头像</string>
+    <string name="password_change">修改密码</string>
+    <string name="personal_profile_address">地区</string>
+    <string name="password_old">旧密码</string>
+    <string name="password_old_hint">请输入旧密码</string>
+    <string name="password_new">新密码</string>
+    <string name="password_new_hint">密码必须是6-16位</string>
+    <string name="password_new_confirm">确认新密码</string>
+    <string name="password_new_confirm_hint">请再次填写密码</string>
+    <string name="feedback_tip">欢迎提需求或意见，我们的进步离不开你的反馈！</string>
+    <string name="feedback_contact">联系方式（Email或QQ）</string>
+    <string name="cleanCache_success">清除缓存成功</string>
+
+    <!-- 账户管理 -->
+    <string name="reset_pw">重置密码</string>
+    <string name="change_phone_num">修改手机号码</string>
+    <string name="reset_login_pw">修改登录密码</string>
+    <string name="reset_trade_pw">修改体现密码</string>
+
+    <!-- 购物车 -->
+    <string name="total">合计：</string>
+    <string name="settle">结算</string>
+    <string name="check_all">全选</string>
+
+    <!-- 编辑地址 -->
+    <string name="editor_address_receive_people">收货人</string>
+    <string name="editor_address_zip_code">邮政编码</string>
+    <string name="editor_address_in_where">所在地区</string>
+    <string name="editor_address_detail_address">详细地址</string>
+    <string name="editor_address_set_default_address">设置为默认地址</string>
+
+    <!-- 茶商城 -->
+    <string name="goods">商品</string>
+    <string name="teamall_tea_shop">茶铺</string>
+    <string name="teamall_edittext_hint">搜索商品</string>
+    <string name="teamall_comprehensive">综合</string>
+    <string name="teamall_sales_volume">销量</string>
+    <string name="teamall_price">价格</string>
+    <string name="teamall_comment">评价</string>
+    <string name="teamall_sort">茶类</string>
+    <string name="teamall_sort_name">品牌</string>
+    <string name="teamall_in_where">产地</string>
+    <string name="teamall_price_range">价格区间</string>
+    <string name="teamall_search_myshop_goods">搜索茶铺内商品</string>
+
+    <!-- 我的店铺 -->
+    <string name="my_shop_tea_sort">茶类</string>
+    <string name="my_shop_new_product">新品</string>
+
+    <!-- 茶类 -->
+    <string name="tea_flower">花茶</string>
+    <string name="tea_white">白茶</string>
+    <string name="tea_grenn">绿茶</string>
+    <string name="tea_black">黑茶</string>
+    <string name="tea_red">红茶</string>
+    <string name="tea_puercha">普洱茶</string>
+    <string name="shop_">商品</string>
+    <string name="service">服务</string>
+    <string name="logistics">物流</string>
+    <string name="detail_zixun">咨询</string>
+    <string name="detail_right_now_buy">立即购买</string>
+    <string name="detail_put_in_shop_car">加入购物车</string>
+
+    <!-- 确认订单 -->
+    <string name="comfirm_order_comfirm">确认订单</string>
+    <string name="comfirm_order_choice_edit">选填:给商家留言（85字以内）</string>
+    <string name="comfirm_order_my_amounts">我的现金</string>
+    <string name="comfirm_order_pay_style">支付方式</string>
+    <string name="comfirm_order_choice_pay_style_zhifubao">支付宝支付</string>
+    <string name="comfirm_order_choice_pay_style_union">银联支付</string>
+    <string name="comfirm_order_recommended">推荐人:</string>
+    <string name="comfirm_order_input_recommended_id">输入推荐人id</string>
+    <string name="comfirm_order_amounts">应付金额</string>
+    <string name="comfirm_order_submit_order">提交订单</string>
+
+    <!-- 评价 -->
+    <string name="comment_all_comment">全部评价</string>
+    <string name="comment_good_comment">好评</string>
+    <string name="comment_middle_comment">中评</string>
+    <string name="comment_bad_comment">差评</string>
+    <string name="comment_to_tea_beauty">给茶丽人评分</string>
+    <string name="comment_profession">专业</string>
+    <string name="comment_contact">沟通</string>
+    <string name="comment_on_the_time">准时</string>
+    <string name="comment_released">发布</string>
+    <string name="comment_branch">商品评分</string>
+    <string name="comment_service">服务态度</string>
+    <string name="comment_speed">物流速度</string>
+
+    <!-- 我的茶苗 -->
+    <string name="tea_sort">种类：</string>
+    <string name="tea_sort_name">品种：</string>
+    <string name="tea_grow_state">茶苗现状：</string>
+    <string name="tea_num">数量：</string>
+    <string name="tea_id">编号：</string>
+
+    <!-- 我的收藏 -->
+    <string name="beauty">丽人</string>
+    <string name="shop">店铺</string>
+    <string name="num">编号:</string>
+
+    <!-- 主界面我的 -->
+    <string name="my_fans">我的茶粉</string>
+    <string name="my_coin">我的茶币</string>
+    <string name="my_xianjin">我的现金</string>
+    <string name="my_beautiful_women">我是茶丽人</string>
+    <string name="my_wait_for_pay">待付款</string>
+    <string name="my_wait_for_fh">待发货</string>
+    <string name="my_wait_for_receive">待收货</string>
+    <string name="my_wait_for_comment">待评价</string>
+    <string name="my_wait_for_query_goods">查退货</string>
+    <string name="my_all_order">我的订单</string>
+    <string name="my_all_clrorder">茶丽人订单</string>
+    <string name="my_order">我的订单</string>
+    <string name="my_small_tea">我的茶苗</string>
+    <string name="my_collect">我的收藏</string>
+    <string name="my_set">设置</string>
+    <string name="balace_golden_">茶币余额</string>
+    <string name="balace_silver_"></string>
+    <string name="recharge">充值</string>
+
+    <!-- 商品 详情 -->
+    <string name="detail_picture_text_detail">图文详情</string>
+    <string name="detail_picture_text_specification_parameter">规格参数</string>
+    <string name="detail_viewpager_main_params">主体参数</string>
+    <string name="detail_viewpager_sort_name">品牌</string>
+    <string name="detail_viewpager_sort">类别</string>
+    <string name="detail_viewpager_in_where">产地</string>
+    <string name="detail_viewpager_our_country_or_other_country">国产/进口</string>
+    <string name="detail_viewpager_shelf_life">保质期</string>
+    <string name="detail_viewpager_packing">包装</string>
+    <string name="detail_viewpager_net_weigth">净重</string>
+    <string name="detail_viewpager_storage_method">存储方法</string>
+    <string name="detail_viewpager_shengchanxukez">生产许可证</string>
+    <string name="detail_viewpager_other_params">其他参数</string>
+    <string name="detail_go_on_move_query_detail">继续拖动，查看图文详情</string>
+
+    <!-- 评价 -->
+    <string name="comment_edit">写下你想说的话吧</string>
+
+    <!-- 主界面 -->
+    <string name="tea_shop">茶商城</string>
+    <string name="tea_zhongchou">茶众筹</string>
+    <string name="tea_search_tea">找茶馆</string>
+    <string name="tea_beautiful_men">茶丽人</string>
+    <string name="tea_grow_tea">定种茶</string>
+    <string name="tea_coin_space">银元区</string>
+    <string name="tea_charity">茶慈善</string>
+    <string name="homepager_limite_time_shop">限时抢购</string>
+    <string name="beautiful_men_recommed">茶丽人推荐</string>
+    <string name="tea_company_business">茶企招商</string>
+    <string name="more_happy_wait_you">更多惊喜等着你</string>
+    <string name="smallteafffffff">最少的币，淘最好的茶</string>
+    <string name="shop_car_is_null">您的购物车还是空荡荡的</string>
+    <string name="shop_go_to_shop">赶紧去逛逛</string>
+    <string name="shop_car_">购物车</string>
+    
+    
+    <string name="title_activity_main">MainActivity</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_activity_li_ren">LiRenActivity</string>
+    <string name="title_activity_dian_dian">DianDianActivity</string>
+    <string name="title_activity_ding_dan">DingDanActivity</string>
+    <string name="title_activity_yin_yuan_main">YinYuanMainActivity</string>
+    <string name="title_activity_mingxi">MingxiActivity</string>
+    <string name="title_activity_duihuan">DuihuanActivity</string>
+    <string name="title_activity_add_manage">AddManageActivity</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_activity_duihuan_ji_lu">DuihuanJiLuActivity</string>
+    <string name="title_activity_my_li_ren">MyLiRenActivity</string>
+
+</resources>

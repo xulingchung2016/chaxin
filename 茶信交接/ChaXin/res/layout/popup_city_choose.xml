@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+     >
+     <RelativeLayout 
+         android:id="@+id/rl_top"
+          android:layout_width="fill_parent"
+          android:visibility="gone"
+          android:layout_marginTop="10dip"
+                android:layout_height="wrap_content"
+         >
+         
+     <Button 
+         android:id="@+id/btn_cancle"
+          android:layout_width="80dip"
+          
+                android:layout_height="40dip"
+          android:text="取消"
+          android:background="@drawable/title_background"
+          android:textColor="@color/black"
+         />
+     <Button 
+         android:id="@+id/btn_ok"
+          android:layout_width="80dip"
+          android:layout_alignParentRight="true"
+          android:text="确定"
+          android:background="@color/lay_orange"
+          android:textColor="@color/White"
+                android:layout_height="40dip"
+         />
+     </RelativeLayout>
+
+    <GridView
+        android:id="@+id/district_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:layout_margin="12dp"
+        android:layout_below="@+id/rl_top"
+        android:background="@color/white"
+        android:choiceMode="singleChoice"
+        android:gravity="center"
+        android:horizontalSpacing="12dp"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3"
+        android:state_checkable="true"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="12dp" >
+    </GridView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/district_gridview"
+        android:background="@drawable/title_background" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="13dp"
+                android:text="当前城市："
+                android:textColor="@color/blue_cloud_scheme"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/current_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="深圳"
+                android:textColor="@color/blue_cloud_scheme"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right|center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/change_city_linearlayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="切换城市"
+                        android:textColor="@color/change_city" />
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/arrow_right_gray" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

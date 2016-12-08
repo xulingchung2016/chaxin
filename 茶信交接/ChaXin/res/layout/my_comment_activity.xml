@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+   
+    
+    <include 
+        android:id="@+id/actionbar"
+        layout="@layout/all_actionbar"
+        />
+    
+
+    <LinearLayout
+        android:layout_below="@id/actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="62dip"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/beauty_collect_imageview"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="8dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/shape_imageview_kk"
+                android:scaleType="fitXY"
+                android:src="@drawable/cha" />
+
+            <TextView
+                android:id="@+id/goods_collect_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="6dip"
+                android:layout_toRightOf="@id/beauty_collect_imageview"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/theme_text_normal_color_black"
+                android:textSize="@dimen/textsize_middle_1" />
+
+            <TextView
+                android:id="@+id/goods_collect_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dip"
+                android:layout_marginLeft="8dip"
+                android:layout_toRightOf="@id/beauty_collect_imageview"
+                android:text="￥150.00"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_middle_1" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip" >
+
+            <TextView
+                android:id="@+id/my_comment_good"
+                style="@style/my_comment_textview"
+                android:layout_alignParentLeft="true"
+                android:drawableLeft="@drawable/comment_good"
+                android:text="@string/comment_good_comment" />
+
+            <TextView
+                android:id="@+id/my_comment_center"
+                style="@style/my_comment_textview"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/comment_middle"
+                android:text="@string/comment_middle_comment" />
+
+            <TextView
+                android:id="@+id/my_comment_bad"
+                style="@style/my_comment_textview"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/comment_bad"
+                android:text="@string/comment_bad_comment" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/comment_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"
+            android:layout_marginLeft="16dip"
+            android:layout_marginRight="16dip"
+            android:layout_marginTop="12dip"
+            android:background="@color/theme_background_color_gray"
+            android:gravity="left|top"
+            android:hint="@string/comment_edit"
+            android:padding="5dip"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+        <LinearLayout 
+            android:id="@+id/linear_beauty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:orientation="vertical" 
+            >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dip"
+            android:layout_marginTop="8dip"
+            android:text="@string/comment_to_tea_beauty"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+
+        <LinearLayout
+            android:id="@+id/comment_linear_beauty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/comment_linear" >
+
+                <TextView
+                    style="@style/comment_textview"
+                    android:text="@string/comment_profession" />
+
+                <RatingBar
+                    android:id="@+id/comment_profession_ratingbar"
+                    style="@style/comment_ratingbar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/comment_linear" >
+
+                <TextView
+                    style="@style/comment_textview"
+                    android:text="@string/comment_contact" />
+
+                <RatingBar
+                    android:id="@+id/comment_contact_ratingbar"
+                    style="@style/comment_ratingbar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/comment_linear" >
+
+                <TextView
+                    style="@style/comment_textview"
+                    android:text="@string/comment_on_the_time" />
+
+                <RatingBar
+                    android:id="@+id/comment_on_the_time_ratingbar"
+                    style="@style/comment_ratingbar" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+        <LinearLayout
+            android:id="@+id/comment_linear_goods"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/comment_linear" >
+
+                <TextView
+                    style="@style/comment_textview"
+                    android:text="@string/comment_branch" />
+
+                <RatingBar
+                    android:id="@+id/comment_branch_ratingbar"
+                    style="@style/comment_ratingbar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/comment_linear" >
+
+                <TextView
+                    style="@style/comment_textview"
+                    android:text="@string/comment_service" />
+
+                <RatingBar
+                    android:id="@+id/comment_service_ratingbar"
+                    style="@style/comment_ratingbar" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/comment_linear" >
+
+                <TextView
+                    style="@style/comment_textview"
+                    android:text="@string/comment_speed" />
+
+                <RatingBar
+                    android:id="@+id/comment_speed_ratingbar"
+                    style="@style/comment_ratingbar" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_background_color_gray" >
+
+        <Button
+            android:id="@+id/comment_btn_warp"
+            style="@style/all_button_ww_orange"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dip"
+            android:text="@string/comment_released"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

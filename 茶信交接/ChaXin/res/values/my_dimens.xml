@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    
+    
+    <dimen name="my_coin_pading_left">6dip</dimen>
+    
+    <dimen name="my_coin_pading_right">8dip</dimen>
+    
+    <dimen name="my_small_tea_margin">8dip</dimen>
+    
+    
+    <dimen name="detail_pading">4dip</dimen>
+    
+    <dimen name="marginleft8dip">8dip</dimen>
+    
+    
+    
+    <dimen name="weizhangchaxun_num">6dip</dimen>
+    
+    <dimen name="homepager_gridview_margin">12dip</dimen>
+    
+    <dimen name="person_profile_button_margin">16dip</dimen>
+    
+    
+    <dimen name="login_linear_margin">24dip</dimen>
+    
+    
+    <dimen name="decice_marign_top">10dip</dimen>
+    
+    <dimen name="illegal_query_linear_margin">6dip</dimen>
+    
+    <dimen name="viewflow_heigth">180dip</dimen>
+    
+    <dimen name="homepager_magin">16dip</dimen>
+    
+    
+    <dimen name="plus_reduce">32dip</dimen>
+    
+    <dimen name="all_1_dip">1dip</dimen>
+    <dimen name="all_2_dip">2dip</dimen>
+    <dimen name="all_4_dip">4dip</dimen>
+    <dimen name="all_6_dip">6dip</dimen>
+    <dimen name="all_8_dip">8dip</dimen>
+    
+    
+    <!-- 字体大小  小 -->
+    <dimen name="textsize_small">11sp</dimen>
+    
+     <!-- 字体大小  小 -->
+    <dimen name="textsize_small_1">10sp</dimen>
+    
+    
+    <!-- 字体大小  大 -->
+    <dimen name="textsize_max">14sp</dimen>
+    <!-- 字体大小  大- -->
+    <dimen name="textsize_max_1">13sp</dimen>
+    <!-- 字体大小  中 -->
+    <dimen name="textsize_middle">12sp</dimen> 
+    
+    <dimen name="textsize_middle_1">11sp</dimen>
+    
+    <!-- 字体大小  title -->
+    <dimen name="textsize_title">16sp</dimen>
+    
+    <dimen name="divider_height">0.5dip</dimen>
+    
+</resources>

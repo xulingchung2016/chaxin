@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    
+    <!-- 订种茶苗选择框 -->
+    <style name="SelectDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/SelectDialogAnimation</item>
+    </style>
+
+    <style name="SelectDialogAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_up_out</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_up_in</item>
+        <item name="@android:activityCloseEnterAnimation">@anim/slide_down_out</item>
+        <item name="@android:activityCloseExitAnimation">@anim/slide_down_in</item>
+    </style>
+    <!-- 订种茶苗选择框 -->
+    
+    <style name="MoreDialog_TextItem">
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textColor">@color/theme_text_normal_color_gary</item>
+        <item name="android:drawablePadding">20dp</item>
+    </style>
+    
+    <style name="DialogTheme" parent="android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@drawable/bg_transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+     <!-- 普通18sp白色文字 -->
+    <style name="ItemSmallWhiteText" parent="TextSmall">
+        <item name="android:textColor">@color/White</item>
+         <item name="android:textSize">24sp</item>
+    </style>
+      <style name="TextSmall">
+        <item name="android:textSize">18sp</item>
+    </style>
+    
+      <!-- 普通18sp黑色文字 -->
+    <style name="ItemSmallBlackText" parent="TextSmall">
+        <item name="android:textColor">@color/Black</item>
+    </style>
+    
+    <style name="Anim_Comm_Style3" parent="android:Theme.NoTitleBar">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@drawable/bg_transparent</item>
+    </style>
+    
+    
+    
+
+</resources>

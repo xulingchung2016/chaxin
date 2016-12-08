@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="250dp"
+    android:layout_height="180dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/tea_cishan_donate_dialog_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dip" >
+
+        <TextView
+            android:id="@+id/be"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nu_edit"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="我要捐献"
+            android:textColor="@color/theme_text_color"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/nu_edit"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/be"
+            android:layout_centerVertical="true"
+            android:background="@drawable/tea_cishan_donate_edit_bg"
+            android:inputType="number"
+            android:paddingLeft="2dip" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nu_edit"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/nu_edit"
+            android:text="茶币"
+            android:textColor="@color/theme_text_color"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center1_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/tea_money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="茶币"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tea_money_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dip"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tea_money_text"
+            android:text="500"
+            android:textColor="@color/theme_text_normal_color_red"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tea_money_nu"
+            android:layout_marginLeft="60dip"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="我要充值"
+            android:textColor="@color/theme_text_normal_color_blue"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/center2_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal" >
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:button="@drawable/tea_cishan_donate_choise_bg"
+            android:checked="true"
+            android:text="同意并接受"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/protocol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/checkBox1"
+            android:background="@android:color/transparent"
+            android:singleLine="true"
+            android:textColor="@color/theme_text_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/cancle_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/center_vertical_line"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/theme_text_normal_color_blue"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/ok_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/center_vertical_line"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:text="捐献"
+            android:textColor="@color/theme_text_normal_color_blue"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/top_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignTop="@+id/cancle_bt"
+            android:background="@color/theme_text_normal_color_gary" />
+
+        <View
+            android:id="@+id/center_vertical_line"
+            android:layout_width="1px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignTop="@+id/cancle_bt"
+            android:layout_centerHorizontal="true"
+            android:background="@color/theme_text_normal_color_gary" />
+    </RelativeLayout>
+
+</LinearLayout>

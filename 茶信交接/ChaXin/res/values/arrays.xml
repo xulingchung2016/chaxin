@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="varieties">
+        <item>龙井</item>
+        <item>碧罗春</item>
+        <item>黄山毛峰</item>
+        <item>庐山云雾</item>
+    </string-array>
+    
+    
+    
+    
+    
+    <string-array name="choice_sex_array">
+        
+        <item >男</item>
+        <item >女</item>
+        <item >保密</item>
+    </string-array>
+    
+    
+    
+</resources>

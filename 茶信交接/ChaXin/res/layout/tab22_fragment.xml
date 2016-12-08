@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+    
+     <include
+        android:id="@+id/homepager"
+        layout="@layout/all_actionbar_homepager" />
+
+    <LinearLayout
+        android:id="@+id/ll_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="40dip"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:src="@drawable/shop_car" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/shop_car_is_null"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shop_car_bg"
+            android:text="@string/shop_go_to_shop"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+    </LinearLayout>
+    
+    <!-- <com.newbrain.customview.PinnedHeaderExpandableListView 
+        android:id="@+id/elistview"
+       android:layout_width="match_parent" 
+                android:layout_height="match_parent" 
+                android:cacheColorHint="@null" 
+                android:childDivider="@color/line_gray" 
+               android:childIndicatorLeft="0dp" 
+                 android:divider="@color/line_gray" 
+                android:dividerHeight="1dp" 
+                 android:groupIndicator="@null" 
+                android:scrollbarAlwaysDrawHorizontalTrack="false"  
+
+        
+        ></com.newbrain.customview.PinnedHeaderExpandableListView>
+     -->
+     <FrameLayout 
+          android:id="@+id/sticky_content"
+          android:layout_width="match_parent"
+    android:layout_height="match_parent"
+         >
+        <com.newbrain.swipeRefresh.SwipyRefreshLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/swipyrefreshlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            
+            >
+            
+     <ExpandableListView 
+        android:id="@+id/elistview"
+       android:layout_width="match_parent" 
+                android:layout_height="match_parent" 
+                android:cacheColorHint="@null" 
+                android:childDivider="@color/line_gray" 
+               android:childIndicatorLeft="0dp" 
+                 android:divider="@color/line_gray" 
+                android:dividerHeight="1dp" 
+                 android:groupIndicator="@null" 
+                android:scrollbarAlwaysDrawHorizontalTrack="false"  
+
+        
+        ></ExpandableListView>
+        </com.newbrain.swipeRefresh.SwipyRefreshLayout>
+     
+     <FrameLayout
+        android:id="@+id/topGroup"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:orientation="vertical" >
+    </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

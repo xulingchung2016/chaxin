@@ -1,0 +1,581 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_basic_color"
+    tools:context=".LiRenActivity" >
+
+    <RelativeLayout
+        android:id="@+id/lay_imgs"
+        android:layout_width="fill_parent"
+        android:visibility="visible"
+        android:layout_height="200dp" >
+       
+
+        <ViewSwitcher
+            android:id="@+id/vst_liren_imgs"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ViewSwitcher>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_tip"
+            android:layout_width="90dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#00000000"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <ImageView
+                android:id="@+id/img_page_1"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/yy_img_show" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_page_2"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                android:visibility="invisible"
+                android:background="@drawable/yy_img_un_show" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_page_3"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginLeft="3dp"
+                 android:visibility="invisible"
+                android:layout_weight="1"
+                android:background="@drawable/yy_img_un_show" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_page_4"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginLeft="3dp"
+                android:layout_weight="1"
+                 android:visibility="invisible"
+                android:background="@drawable/yy_img_un_show" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/img_page_5"
+                android:layout_width="wrap_content"
+                android:layout_height="5dp"
+                android:layout_marginLeft="3dp"
+                 android:visibility="invisible"
+                android:layout_weight="1"
+                android:background="@drawable/yy_img_un_show" >
+            </ImageView>
+        </LinearLayout>
+         <Button
+            android:id="@+id/btn_back"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dip"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/arrow_left_circle_" />
+    </RelativeLayout>
+    <ScrollView 
+         android:layout_width="fill_parent"
+        android:layout_below="@+id/lay_imgs"
+        android:layout_height="fill_parent"
+        android:layout_marginBottom="60dip"
+        >
+        <RelativeLayout 
+             android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+            >
+            
+     
+
+    <LinearLayout
+        android:id="@+id/lay_disc"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_write_color"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txt_memo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/main_write_color"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/txt_time" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_price"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/lay_disc"
+        android:background="@color/main_write_color" >
+
+        <TextView
+            android:id="@+id/txt_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@color/main_write_color"
+            android:text="￥ 0.00"
+            android:textColor="@color/txt_price"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@color/main_write_color"
+            android:text=""
+            android:textColor="@color/txt_time"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/txt_chengjiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/main_write_color"
+            android:text="成交"
+            android:visibility="gone"
+            android:textColor="@color/txt_time"
+            android:textSize="12dp" />
+    </RelativeLayout>
+    
+    
+    <RelativeLayout 
+         android:id="@+id/lay_pinlun"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/main_write_color"
+        android:layout_below="@+id/lay_price"
+        >
+        <TextView
+            android:id="@+id/tv_pinlun"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/main_write_color"
+                    android:gravity="center_vertical"
+                    android:text="累计评论"
+                    android:layout_marginRight="10dip"
+                    
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+        
+         <ImageButton
+            android:id="@+id/img_see_liren_info"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/yy_more_info" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_pinlun"
+        android:layout_marginTop="5dp"
+        android:background="@color/main_write_color" >
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/yy_liren_logo" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img_logo"
+            android:background="@color/main_write_color"
+            android:text=""
+            android:textColor="@color/txt_time"
+            android:textSize="15dp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txt_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/img_logo"
+            android:background="@color/main_write_color"
+            android:text="编号："
+            android:textColor="@color/txt_time"
+            android:textSize="12dp" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv_levels"
+            android:layout_width="50dp"
+            android:layout_height="18dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/txt_name"
+            android:background="@drawable/yy_emerald" />
+
+        <View
+            android:id="@+id/lin_spi"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/img_logo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/txt_time" />
+
+        <LinearLayout
+            android:id="@+id/chaguan"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lin_spi"
+            android:background="@color/main_write_color"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/main_write_color"
+                    android:gravity="center_vertical"
+                    android:text="所属茶馆"
+                    android:layout_marginRight="10dip"
+                    
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+
+                <TextView
+                    android:id="@+id/txt_storeName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_write_color"
+                    android:gravity="right|center_vertical"
+                    android:text=""
+                    
+                    android:paddingRight="10dip"
+                    android:textColor="@color/txt_time"
+                    android:textSize="15dp" >
+                </TextView>
+
+           
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lin_spi_1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/chaguan"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/txt_time" />
+
+        <LinearLayout
+            android:id="@+id/lay_time"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/lin_spi_1"
+            android:background="@color/main_write_color"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/main_write_color"
+                    android:gravity="center_vertical"
+                    android:text="预约时间"
+                    android:layout_marginRight="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/txt_yuyue_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_write_color"
+                    android:gravity="right|center_vertical"
+                    android:text="未选择"
+                    android:paddingRight="5dip"
+                    android:drawableRight="@drawable/yy_more_info"
+                    android:textColor="@color/txt_black"
+                    android:textSize="15sp" >
+                </TextView>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lin_spi_2"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/lay_time"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/txt_time" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/lin_spi_2"
+            android:background="@color/main_write_color"
+            android:orientation="horizontal"
+            
+            android:weightSum="3" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/main_write_color" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/main_write_color"
+                    android:gravity="center_vertical"
+                    android:text="服务区域"
+                    android:textColor="@color/txt_time"
+                    android:textSize="15dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/main_write_color" >
+
+                <TextView
+                    android:id="@+id/tv_area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/main_write_color"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:paddingTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:textColor="@color/txt_time"
+                    android:textSize="15dp" >
+                </TextView>
+            </RelativeLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>
+       </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_write_color"
+        android:orientation="horizontal"
+        android:weightSum="6" >
+
+        <RelativeLayout
+            android:id="@+id/rl_collect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:background="@color/main_write_color" >
+
+            <ImageView
+                android:id="@+id/img_shoucang"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/yy_shoucang" />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_shoucang"
+                android:layout_marginLeft="10dp"
+                android:background="@color/main_write_color"
+                android:gravity="center_horizontal"
+                android:text="收藏"
+                android:textColor="@color/txt_black"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:visibility="invisible"
+            android:background="@color/main_write_color" >
+
+            <ImageView
+                android:id="@+id/img_zixun"
+                android:layout_width="35dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+               
+                android:layout_marginTop="2dp"
+                android:src="@drawable/zixun" />
+
+            <TextView
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img_zixun"
+                android:layout_marginLeft="10dp"
+                android:background="@color/main_write_color"
+                android:gravity="center_horizontal"
+                 
+                android:text="咨询"
+                android:textColor="@color/txt_black"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_write_color" >
+
+            <ImageButton
+                android:id="@+id/img_selete_her"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/yy_select_her"
+                android:paddingRight="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_select_time"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60000000"
+        android:gravity="bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+        <RadioGroup 
+            android:id="@+id/rg_time"
+            android:layout_width="0dip"
+        android:layout_height="200dip"
+        android:layout_weight="1"
+         android:background="@color/White"
+        android:orientation="vertical"
+            >
+            
+       
+        <RadioButton 
+            android:id="@+id/rb_now"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:background="@drawable/bg_gray_white"
+            android:text="今天"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+          <RadioButton 
+            android:id="@+id/rb_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/bg_gray_white"
+            android:text="1-2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+            <RadioButton 
+            android:id="@+id/rb_3"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/bg_gray_white"
+            android:text="2-3"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+              <RadioButton 
+            android:id="@+id/rb_4"
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_weight="1"
+            android:button="@null"
+            android:background="@drawable/bg_gray_white"
+            android:text="3-4"
+            android:gravity="center"
+            android:textColor="@color/black"
+            />
+ </RadioGroup>
+ 
+ <GridView
+     android:id="@+id/gd_time"
+     android:layout_width="0dip"
+     android:layout_height="200dip"
+     android:numColumns="3"
+     android:background="@color/White"
+     android:layout_weight="3"
+     android:listSelector="#00000000"
+     android:scrollbars="none"
+      ></GridView>
+       
+        
+    </LinearLayout>
+
+</RelativeLayout>

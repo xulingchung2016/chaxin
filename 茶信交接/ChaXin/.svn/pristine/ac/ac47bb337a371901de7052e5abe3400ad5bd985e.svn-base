@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style_regular_width"
+            android:text="@string/new_old_password" />
+
+        <EditText 
+            android:id="@+id/new_old_password"
+            style="@style/set_edittext_style_editor_address"
+            android:hint="@string/new_old_password_hint"
+            />
+       
+    </LinearLayout>
+    
+     <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style_regular_width"
+            android:text="@string/new_password" />
+
+        <EditText 
+            android:id="@+id/new_password_hint"
+            style="@style/set_edittext_style_editor_address"
+            android:hint="@string/new_password"
+            
+            />
+       
+    </LinearLayout>
+    
+    
+    <Button 
+        android:id="@+id/change_login_btn_finish"
+        style="@style/all_btn_orange_all_screen"
+        android:text="@string/new_old_finish"
+        />
+    
+
+</LinearLayout>

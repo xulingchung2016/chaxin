@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dip"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/beauty_service_gridview_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingBottom="8dip"
+        android:paddingTop="8dip"
+        android:text="17:00"
+        android:textColor="@color/theme_text_normal_color_black"
+        android:textSize="@dimen/textsize_middle" />
+
+    <ImageView
+        android:id="@+id/beauty_service_gridview_item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="4dip"
+        android:layout_marginRight="4dip"
+        android:src="@drawable/lineframe_orange_right" />
+
+</RelativeLayout>

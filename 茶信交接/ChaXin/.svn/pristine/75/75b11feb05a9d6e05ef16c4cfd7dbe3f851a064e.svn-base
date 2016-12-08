@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <LinearLayout
+        style="@style/personal_center_linear"
+        android:layout_marginTop="1dip" >
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/add_card_account_holder" />
+
+            <EditText
+                android:id="@+id/add_card_account_holder"
+                style="@style/receiver_address_edittext"
+                 />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/add_card_num" />
+
+            <EditText
+                android:id="@+id/add_card_num"
+                style="@style/receiver_address_edittext"
+                 />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/add_card_account_bank" />
+
+            <EditText
+                android:id="@+id/add_card_account_bank"
+                style="@style/receiver_address_edittext"
+                />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/add_card_vaildate" />
+
+            <EditText
+                android:id="@+id/add_card_vaildate"
+                style="@style/receiver_address_edittext"
+                />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                android:text="@string/add_card_phone" />
+
+            <EditText
+                android:id="@+id/add_card_phone"
+                style="@style/receiver_address_edittext"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/address_manager_detail_btn_save"
+        style="@style/all_btn_orange_all_screen"
+        android:text="@string/add" />
+
+</LinearLayout>

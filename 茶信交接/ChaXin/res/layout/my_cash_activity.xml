@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <LinearLayout
+         android:id="@+id/my_cash_num"
+        style="@style/my_four_linear_horizontal"
+         android:paddingBottom="@dimen/all_6_dip"
+            android:paddingTop="@dimen/all_6_dip"
+        android:layout_marginTop="1dip" >
+
+
+        <TextView
+            style="@style/my_four_textview_horizontal"
+            android:paddingBottom="@dimen/all_4_dip"
+            android:paddingLeft="@dimen/all_8_dip"
+            android:paddingTop="@dimen/all_4_dip"
+            android:text="@string/my_cash_"
+            android:textColor="@color/theme_text_normal_color_black" />
+        
+        
+        <TextView 
+            android:id="@+id/my_cash_num_balance"
+             style="@style/my_four_textview_horizontal"
+            android:text="500元"
+            android:textSize="@dimen/textsize_small"
+            android:layout_weight="1"
+            android:gravity="right"
+            />
+        
+
+        <ImageView style="@style/my_arrows_right" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+         android:id="@+id/my_cash_recharge"
+        style="@style/my_four_linear_horizontal"
+         android:paddingBottom="@dimen/all_6_dip"
+            android:paddingTop="@dimen/all_6_dip"
+        android:layout_marginTop="8dip" >
+
+      
+        <TextView
+            style="@style/my_four_textview_horizontal"
+            android:paddingBottom="@dimen/all_4_dip"
+            android:paddingLeft="@dimen/all_8_dip"
+            android:paddingTop="@dimen/all_4_dip"
+            android:text="@string/my_cash_recharge"
+            android:textColor="@color/theme_text_normal_color_black" />
+        
+      
+
+        <ImageView style="@style/my_arrows_right" />
+    </LinearLayout>
+    
+    
+    <LinearLayout
+         android:id="@+id/my_cash_withdraw"
+        style="@style/my_four_linear_horizontal"
+         android:paddingBottom="@dimen/all_6_dip"
+            android:paddingTop="@dimen/all_6_dip"
+        android:layout_marginTop="1dip" >
+
+        <TextView
+            style="@style/my_four_textview_horizontal"
+            android:paddingBottom="@dimen/all_4_dip"
+            android:paddingLeft="@dimen/all_8_dip"
+            android:paddingTop="@dimen/all_4_dip"
+            android:text="@string/my_cash_withdraw"
+            android:textColor="@color/theme_text_normal_color_black" />
+        
+       
+
+        <ImageView style="@style/my_arrows_right" />
+    </LinearLayout>
+
+</LinearLayout>

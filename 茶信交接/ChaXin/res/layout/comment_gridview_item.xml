@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    
+    <TextView 
+        android:id="@+id/comment_gridview_item_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="味道真的很好（365）"
+        android:background="@drawable/comment_girdview_item"
+        android:paddingLeft="4dip"
+        android:paddingRight="1dip"
+        android:layout_marginLeft="4dip"
+        android:textColor="@color/theme_text_normal_color_black"
+        android:textSize="@dimen/textsize_small"
+        />
+    
+    
+    
+    
+    
+    
+
+</LinearLayout>

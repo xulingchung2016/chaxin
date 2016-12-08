@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="180dip"
+                android:layout_marginBottom="3dip"
+                android:background="@drawable/my_gb"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/my_user"
+                    android:layout_width="80dip"
+                    android:layout_height="80dip"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/my_user" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/my_user_name"
+                        style="@style/my_textview"
+                        android:text="差点点"
+                        android:textSize="@dimen/textsize_middle" />
+
+                    <ImageView
+                        android:id="@+id/my_user_level"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/level_baiying" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/my_user_num"
+                    style="@style/my_textview"
+                    android:text="点击头像登录"
+                    android:layout_marginTop="10dip"
+                    android:textSize="@dimen/textsize_max" />
+
+                <LinearLayout
+                    android:id="@+id/ll_bz"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:gravity="bottom"
+                    android:layout_marginTop="10dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/my_user_xianjin"
+                        style="@style/my_textview"
+                        android:textSize="@dimen/textsize_middle"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="现金：0" />
+
+                    <TextView
+                        android:id="@+id/my_user_chabi"
+                        style="@style/my_textview"
+                         android:textSize="@dimen/textsize_middle"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:text="茶币：0" />
+
+                    <TextView
+                        android:id="@+id/my_user_yinyuan"
+                        style="@style/my_textview"
+                        android:visibility="gone"
+                        android:text="银元：5263" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 我的4个 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="86dip"
+                android:background="@drawable/gridview_background"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/my_fans"
+                    android:visibility="gone"
+                    style="@style/my_four_linear" >
+
+                    <ImageView
+                        style="@style/my_four_imageview"
+                        android:src="@drawable/my_fans" />
+
+                    <TextView
+                        style="@style/my_four_textview"
+                        android:text="@string/my_fans" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_coin"
+                    style="@style/my_four_linear" >
+
+                    <ImageView
+                        style="@style/my_four_imageview"
+                        android:src="@drawable/my_coin" />
+
+                    <TextView
+                        style="@style/my_four_textview"
+                        android:text="@string/my_coin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_cash"
+                    style="@style/my_four_linear" >
+
+                    <ImageView
+                        style="@style/my_four_imageview"
+                        android:src="@drawable/my_cash" />
+
+                    <TextView
+                        style="@style/my_four_textview"
+                        android:text="@string/my_xianjin" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_beauty"
+                    style="@style/my_four_linear" >
+
+                    <ImageView
+                        style="@style/my_four_imageview"
+                        android:src="@drawable/my_beauty" />
+
+                    <TextView
+                        style="@style/my_four_textview"
+                        android:text="@string/my_beautiful_women" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                style="@style/all_divider_all_screen"
+                android:layout_height="6dip" />
+
+            <!-- 第二个4个 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/my_wait_for_pay"
+
+                    style="@style/my_four_linear" >
+
+                    <ImageView
+                        style="@style/my_four_imageview"
+                        android:src="@drawable/my_wait_for_pay" />
+
+                    <TextView
+                        style="@style/my_four2_textview"
+                        android:text="@string/my_wait_for_pay" />
+                </LinearLayout>
+				 <LinearLayout
+                    android:id="@+id/my_wait_for_fh"
+                    style="@style/my_four_linear" >
+
+                    <ImageView
+                        style="@style/my_four_imageview"
+                        android:src="@drawable/my_wait_for_query_goods" />
+
+                    <TextView
+                        style="@style/my_four2_textview"
+                        android:text="@string/my_wait_for_fh" />
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/my_wait_for_receive"
+                    style="@style/my_four_linear" >
+
+                    <ImageView
+                        style="@style/my_four_imageview"
+                        android:src="@drawable/my_wait_for_receive" />
+
+                    <TextView
+                        style="@style/my_four2_textview"
+                        android:text="@string/my_wait_for_receive" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/my_wait_for_comment"
+                    style="@style/my_four_linear" >
+
+                    <ImageView
+                        style="@style/my_four_imageview"
+                        android:src="@drawable/my_wait_for_comment" />
+
+                    <TextView
+                        style="@style/my_four2_textview"
+                        android:text="@string/my_wait_for_comment" />
+                </LinearLayout>
+               
+
+                <LinearLayout
+                    android:id="@+id/my_wait_for_query_goods"
+                    android:visibility="gone"
+                    style="@style/my_four_linear" >
+
+                    <ImageView
+                        style="@style/my_four_imageview"
+                        android:src="@drawable/my_wait_for_query_goods" />
+
+                    <TextView
+                        style="@style/my_four2_textview"
+                        android:text="@string/my_wait_for_query_goods" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/all_divider_all_screen" />
+
+            <LinearLayout
+                android:id="@+id/my_all_order"
+                style="@style/my_four_linear_horizontal"
+                android:layout_marginTop="1dip"
+                 >
+
+                <ImageView
+                    style="@style/my_four_imageview"
+                    android:src="@drawable/my_all_order" />
+
+                <TextView
+                    style="@style/my_four_textview_horizontal"
+                    android:text="@string/my_all_order" />
+
+                <ImageView style="@style/my_arrows_right" />
+            </LinearLayout>
+             <View
+                style="@style/all_divider_all_screen"
+                android:layout_height="4dip" />
+            <LinearLayout
+                android:id="@+id/my_all_clrorder"
+                style="@style/my_four_linear_horizontal"
+                android:layout_marginTop="1dip"
+                 >
+
+                <ImageView
+                    android:layout_width="20dip"
+                    android:layout_marginLeft="7dip"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="8dip"
+                    android:layout_marginBottom="8dip"
+                    android:layout_height="20dip"
+                    android:src="@drawable/lirs" />
+
+                <TextView
+                    style="@style/my_four_textview_horizontal"
+                    android:text="@string/my_all_clrorder" />
+
+                <ImageView style="@style/my_arrows_right" />
+            </LinearLayout>
+
+            <View
+                style="@style/all_divider_all_screen"
+                android:layout_height="4dip" />
+
+            <LinearLayout
+                android:id="@+id/my_small_tea"
+                style="@style/my_four_linear_horizontal" >
+
+                <ImageView
+                    style="@style/my_four_imageview"
+                    android:src="@drawable/my_small_tea_" />
+
+                <TextView
+                    style="@style/my_four_textview_horizontal"
+                    android:text="@string/my_small_tea" />
+
+                <ImageView style="@style/my_arrows_right" />
+            </LinearLayout>
+
+            <View style="@style/all_divider_all_screen" />
+
+            <LinearLayout
+                android:id="@+id/my_collect"
+                style="@style/my_four_linear_horizontal"
+                android:layout_marginTop="1dip"
+                 >
+
+                <ImageView
+                    style="@style/my_four_imageview"
+                    android:src="@drawable/my_collect" />
+
+                <TextView
+                    style="@style/my_four_textview_horizontal"
+                    android:text="@string/my_collect" />
+
+                <ImageView style="@style/my_arrows_right" />
+            </LinearLayout>
+
+            <View
+                style="@style/all_divider_all_screen"
+                android:layout_height="4dip" />
+
+            <LinearLayout
+                android:id="@+id/my_set"
+                style="@style/my_four_linear_horizontal" >
+
+                <ImageView
+                    style="@style/my_four_imageview"
+                    android:src="@drawable/my_set" />
+
+                <TextView
+                    style="@style/my_four_textview_horizontal"
+                    android:text="@string/my_set" />
+
+                <ImageView style="@style/my_arrows_right" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/all_actionbar_homepager"  />
+
+</RelativeLayout>

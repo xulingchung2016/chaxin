@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray">
+        
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+
+        android:background="@color/white"
+        android:orientation="horizontal" >
+        
+        <RelativeLayout
+            android:id="@+id/TeaMall_listview_order_title_Layout"
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="20dip"
+        	android:layout_marginBottom="5dip" >
+        	<TextView
+            	android:id="@+id/TeaMall_listview_order_title_shop_name"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentLeft="true"
+            	android:layout_marginLeft="4dip"
+            	android:layout_marginRight="6dip"
+            	android:layout_marginTop="8dip"
+            	android:text="书香茶叶店"
+            	android:textColor="@color/theme_text_normal_color_black"
+            	android:textSize="@dimen/textsize_middle_1" />
+        	<TextView
+            	android:id="@+id/TeaMall_listview_order_title_order_status"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_toRightOf="@+id/TeaMall_listview_order_title_shop_name"
+            	android:layout_marginLeft="4dip"
+            	android:layout_marginRight="6dip"
+            	android:layout_marginTop="8dip"
+            	android:text="交易成功"
+            	android:textColor="@color/theme_text_normal_color_black"
+            	android:textSize="@dimen/textsize_middle_1" />
+        	
+        	<ImageView
+        		android:id="@+id/gooddetail_image_listview_order_title_order_deleteimg"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignParentRight="true"
+        		android:src="@drawable/delete"
+        		android:scaleType="fitXY" />
+
+    	</RelativeLayout>
+    	
+    	<View
+    	    android:id="@+id/TeaMall_listview_order_title_Line"
+    	    android:layout_below="@id/TeaMall_listview_order_title_Layout"
+        	style="@style/all_divider_all_screen"
+        	android:layout_height="4dip" />
+        
+        <RelativeLayout
+        	android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:layout_marginTop="5dip"
+        	android:layout_marginBottom="5dip"
+        	android:id="@+id/TeaMall_listview_order_detail_Layout"
+         	android:layout_below="@id/TeaMall_listview_order_title_Line">
+        	
+        	<ImageView
+        		android:id="@+id/order_listview_item_order_detail_picture"
+        		android:layout_alignParentLeft="true"
+        		android:layout_width="64dp"
+        		android:layout_height="64dp"
+        		android:layout_centerVertical="true"
+        		android:layout_marginBottom="4dip"
+        		android:layout_marginLeft="4dip"
+        		android:layout_marginTop="4dip"
+        		android:background="@drawable/shape_imageview_kk"
+        		android:scaleType="fitXY"
+        		android:src="@drawable/cha" />
+        	
+        	<TextView
+        	    android:id="@+id/TeaMall_listview_item_order_detail_name"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:maxLines="3"
+            	android:layout_toRightOf="@+id/order_listview_item_order_detail_picture"
+            	android:text="商品名称商品名称" />
+        	
+        	<LinearLayout
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentRight="true"
+        	    android:background="@color/white"
+        	    android:orientation="vertical" > 
+        	    
+        	    <TextView
+        	    android:id="@+id/TeaMall_listview_item_order_detail_price"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="Y192" />
+        	    
+        	    <TextView
+        	    android:id="@+id/TeaMall_listview_item_order_detail_num"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="X2" />	    
+        	</LinearLayout>	
+        </RelativeLayout>
+        
+        <View
+            android:id="@+id/TeaMall_listview_order_detail_Line"
+            android:layout_below="@id/TeaMall_listview_order_detail_Layout"
+        	style="@style/all_divider_all_screen"
+        	android:layout_height="4dip" />
+        
+        <RelativeLayout
+            android:id="@+id/TeaMall_listview_order_comment_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+        	android:layout_marginBottom="5dip"
+            android:layout_below="@id/TeaMall_listview_order_detail_Line">
+        	
+        	<TextView
+        	    android:id="@+id/TeaMall_listview_item_goods_sellCount"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentLeft="true"
+            	android:text="投诉" />
+        	
+        	<Button
+            	android:id="@+id/btn_action_orders"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:layout_alignParentRight="true"
+            	android:layout_centerVertical="true"
+            	android:background="@drawable/but_red"
+            	android:text="评价"
+            	android:textColor="@color/white"
+            	android:textSize="@dimen/textsize_max"/>
+    	</RelativeLayout>
+    	
+        <View
+            android:id="@+id/TeaMall_listview_order_comment_Line"
+            android:layout_below="@id/TeaMall_listview_order_comment_Layout"
+        	style="@style/all_divider_all_screen"
+        	android:layout_height="10dip" />
+    </RelativeLayout>
+
+
+</LinearLayout>

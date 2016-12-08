@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style_regular_width"
+            android:text="@string/editor_address_receive_people" />
+
+        <EditText 
+            android:id="@+id/editor_address_receive_people"
+            style="@style/set_edittext_style_editor_address"
+            
+            />
+       
+    </LinearLayout>
+    
+      <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style_regular_width"
+            android:text="@string/phone_num" />
+
+        <EditText 
+            android:id="@+id/editor_address_phone_num"
+            style="@style/set_edittext_style_editor_address"
+            
+            />
+       
+    </LinearLayout>
+    
+    
+      <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style_regular_width"
+            android:text="@string/editor_address_zip_code" />
+
+        <EditText 
+            android:id="@+id/editor_address_zip_code"
+            style="@style/set_edittext_style_editor_address"
+            
+            />
+       
+    </LinearLayout>
+    
+    
+      <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style_regular_width"
+            android:text="@string/editor_address_in_where" />
+
+        <EditText 
+            android:id="@+id/editor_address_in_where"
+            style="@style/set_edittext_style_editor_address"
+            
+            />
+       
+    </LinearLayout>
+    
+      <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style_regular_width"
+            android:text="@string/editor_address_detail_address" />
+
+        <EditText 
+            android:id="@+id/editor_address_detail_address"
+            style="@style/set_edittext_style_editor_address"
+            
+            />
+       
+    </LinearLayout>
+    
+      <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        
+        style="@style/my_four_linear_horizontal" >
+        
+        <CheckBox 
+            android:id="@+id/set_checkbox_"
+            style="@style/all_check_button_square"
+            android:layout_marginLeft="8dip"
+            />
+
+        <TextView
+            style="@style/set_textview_style_regular_width"
+            
+            android:gravity="left"
+            android:text="@string/editor_address_set_default_address" />
+
+        
+       
+    </LinearLayout>
+    
+    
+    
+
+</LinearLayout>

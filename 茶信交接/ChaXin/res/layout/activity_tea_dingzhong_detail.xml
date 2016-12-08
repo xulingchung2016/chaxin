@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/theme_driver_color" />
+
+    <com.newbrain.customview.XListView
+        android:id="@+id/tea_dingzhong_detail_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:paddingLeft="@dimen/tea_space_15"
+        android:paddingRight="@dimen/tea_space_15"
+        android:scrollbars="none" >
+    </com.newbrain.customview.XListView>
+
+    <TextView
+        android:id="@+id/tv_emptydata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+</LinearLayout>

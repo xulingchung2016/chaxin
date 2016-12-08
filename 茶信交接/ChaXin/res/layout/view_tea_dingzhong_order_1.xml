@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/viewflow_heigth" >
+
+        <com.viewpagerindicator.MyDirectionalViewPager
+            android:id="@+id/tea_dingzhong_order_viewflow"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/viewflow_heigth" >
+        </com.viewpagerindicator.MyDirectionalViewPager>
+
+        <ImageView
+            android:id="@+id/tea_dingzhong_order_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/back_round" />
+
+        <ImageView
+            android:id="@+id/tea_dingzhong_order_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/tea_space_10"
+            android:layout_marginTop="@dimen/tea_space_10"
+            android:src="@drawable/actionbar_right_more_round_no_message" />
+
+        <com.viewpagerindicator.IconPageIndicator
+            android:visibility="gone"
+            android:id="@+id/tea_dingzhong_order_viewflow_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/tea_space_5"
+            android:layout_marginRight="@dimen/tea_space_5" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="@dimen/tea_space_15" >
+
+        <TextView
+            android:id="@+id/tea_dingzhong_order_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="中国茶叶享誉全球,精细化、集约化生产已然成为茶产业的必然走势"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_max" />
+
+        <View
+            android:id="@+id/tea_dingzhong_order_view"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tea_dingzhong_order_title"
+            android:layout_marginBottom="@dimen/tea_space_10"
+            android:layout_marginTop="@dimen/tea_space_10"
+            android:background="@color/theme_driver_color" />
+
+        <TextView
+            android:id="@+id/tea_dingzhong_order_chabi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tea_dingzhong_order_chabi_num"
+            android:text="@string/tea_currency"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textsize_middle" />
+
+        <TextView
+            android:id="@+id/tea_dingzhong_order_chabi_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tea_dingzhong_order_view"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@+id/tea_dingzhong_order_chabi"
+            android:text="190.00"
+            android:textColor="@color/redColor"
+            android:textSize="@dimen/textsize_max" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tea_dingzhong_order_chabi_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tea_dingzhong_order_chabi"
+            android:layout_marginTop="@dimen/tea_space_5"
+            android:paddingLeft="@dimen/tea_space_8"
+            android:text="已有100人订种1000株茶苗"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textsize_small" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tea_dingzhong_order_select_varieties"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/tea_space_15"
+        android:background="@color/white"
+        android:padding="@dimen/tea_space_15" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/select_varieties"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_max" />
+
+        <TextView
+            android:id="@+id/tea_dingzhong_order_variety"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/arrows_right_gray"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_max" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tea_order_attention_heigth"
+        android:layout_marginTop="@dimen/tea_space_15"
+        android:background="@color/white"
+        android:padding="@dimen/tea_space_15"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="订种须知"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_max" />
+        <TextView
+            android:id="@+id/tea_dingzhong_order_attention"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/tea_space_10"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textsize_max" />
+    </LinearLayout>
+
+    
+
+    <TextView
+        android:visibility="gone"
+        
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/tea_space_15"
+        android:text="@string/drop_down_detail"
+        android:textColor="@color/grey"
+        android:textSize="@dimen/textsize_middle"
+        android:layout_gravity="bottom"/>
+	<LinearLayout android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_gravity="bottom"
+	    android:orientation="vertical">
+	    <WebView
+        android:id="@+id/webview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+	    
+	</LinearLayout>
+</LinearLayout>
+</ScrollView>

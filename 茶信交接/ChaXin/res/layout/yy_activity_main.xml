@@ -1,0 +1,193 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_basic_color" >
+
+    <RelativeLayout
+        android:id="@+id/lay_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title_color" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/yy_back" >
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/btn_seleter"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:visibility="visible"
+            android:background="@drawable/yy_selecter" />
+        <EditText
+        android:id="@+id/et_search"
+        android:layout_width="170dip"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/btn_search"
+        android:layout_toRightOf="@+id/btn_more"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:background="@drawable/tea_mall_search_bg2"
+        android:layout_marginRight="10dp"
+      />
+
+        <ImageButton
+            android:id="@+id/btn_more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+              android:visibility="gone"
+            android:layout_toRightOf="@+id/btn_back"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cancel_round" />
+
+        <ImageButton
+            android:id="@+id/btn_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/yy_saerch" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lay_grv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lay_title"
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+<com.newbrain.swipeRefresh.SwipyRefreshLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/swipyrefreshlayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            
+            >
+        <GridView
+            android:id="@+id/grd_liren_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+           >
+        </GridView>
+	</com.newbrain.swipeRefresh.SwipyRefreshLayout>
+       
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_sort"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lay_title"
+        android:gravity="center_horizontal"
+        android:background="#60000000"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:weightSum="4" >
+
+        <RadioGroup
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/title_color"
+            android:orientation="horizontal"
+           >
+
+            <RadioButton
+                android:id="@+id/btn_quancheng"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:background="@color/title_color"
+                android:text="全城"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                  android:textColor="@color/blackColor"
+                android:gravity="center"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/btn_zonghe"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                  android:textColor="@color/blackColor"
+                android:background="@color/title_color"
+                android:text="综合排序"
+                 android:gravity="center"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/btn_dengji"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                android:background="@color/title_color"
+                android:text="等级"
+                 android:gravity="center"
+                  android:textColor="@color/blackColor"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/btn_xingbie"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:singleLine="true"
+                android:ellipsize="middle"
+                 android:gravity="center"
+                android:textColor="@color/blackColor"
+                android:background="@color/title_color"
+                android:text="性别"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/txt_time" >
+        </View>
+<com.newbrain.swipeRefresh.SwipyRefreshLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/swipyrefreshlayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            
+            >
+        <GridView
+            android:id="@+id/grd_liren_list2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:numColumns="2"
+           >
+        </GridView>
+        </com.newbrain.swipeRefresh.SwipyRefreshLayout>
+    </LinearLayout>
+
+</RelativeLayout>

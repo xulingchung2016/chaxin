@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+      android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+    
+    
+    <include layout="@layout/all_actionbar"/>
+    
+   
+
+    <LinearLayout
+        style="@style/personal_center_linear"
+        android:layout_marginTop="8dip"
+        >
+
+        
+        
+        
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                 android:textSize="@dimen/textsize_max"
+                 android:layout_width="wrap_content"
+                 
+                android:text="开户人" />
+
+            <EditText
+                android:layout_marginLeft="6dip"
+                 android:hint="请输入开户人姓名"
+                android:id="@+id/et_bank_people"
+                android:gravity="center"
+                style="@style/receiver_address_edittext" 
+                android:textSize="@dimen/textsize_max"
+                />
+        </LinearLayout>
+        <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/grey"/>
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                 android:textSize="@dimen/textsize_max"
+                 android:layout_width="wrap_content"
+                android:text="卡号" />
+
+            <EditText
+                android:layout_marginLeft="6dip"
+                 android:hint="请输入银行卡号"
+                android:id="@+id/et_bank_no"
+                android:gravity="center"
+                android:inputType="phone"
+              android:textSize="@dimen/textsize_max"
+                style="@style/receiver_address_edittext" />
+            
+        </LinearLayout>
+        <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/grey"/>
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                 android:textSize="@dimen/textsize_max"
+                 android:layout_width="wrap_content"
+                 
+                android:text="开户银行" />
+
+            <TextView
+                android:layout_marginLeft="6dip"
+                 android:hint="请选择开户银行"
+                 android:gravity="center"
+                android:id="@+id/et_bank_name"
+              android:textSize="@dimen/textsize_max"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+        <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/grey"/>
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                 android:textSize="@dimen/textsize_max"
+                 android:layout_width="wrap_content"
+                 
+                android:text="有效日期" />
+
+            <TextView
+                android:layout_marginLeft="6dip"
+                 android:hint="请选择有效日期"
+                 android:gravity="center"
+                android:id="@+id/et_bank_date"
+                android:textSize="@dimen/textsize_max"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+        <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/grey"/>
+        <LinearLayout style="@style/receiver_address_linear" >
+
+            <TextView
+                style="@style/receiver_address_textview"
+                 android:textSize="@dimen/textsize_max"
+                 android:layout_width="wrap_content"
+                 
+                android:text="@string/set_phone_num" />
+
+            <EditText
+                android:layout_marginLeft="6dip"
+                 android:hint="请输入开户行手机号"
+                android:id="@+id/et_bank_phone"
+                android:inputType="phone"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_max"
+                style="@style/receiver_address_edittext" />
+        </LinearLayout>
+        <View  android:layout_width="fill_parent" android:layout_height="0.1dp" android:background="@color/grey"/>
+
+       
+        
+
+    </LinearLayout>
+    
+    
+    <Button 
+        android:id="@+id/btn_save"
+        style="@style/all_btn_orange_all_screen"
+        android:text="@string/btn_save"
+        />
+    
+    
+    
+
+</LinearLayout>

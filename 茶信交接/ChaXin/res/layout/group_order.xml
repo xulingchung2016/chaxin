@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dip"
+    android:background="@color/grey_line"
+    >
+    <TextView
+            	android:id="@+id/tv_store_name"
+            	android:layout_width="wrap_content"
+            	android:layout_height="30dip"
+            	android:layout_marginLeft="4dip"
+            	android:layout_marginRight="6dip"
+            	android:text="茶铺"
+            	android:maxWidth="130dip"
+            	android:gravity="center_vertical"
+            	android:drawableLeft="@drawable/delete"
+            	android:layout_centerVertical="true"
+            	android:textColor="@color/theme_text_normal_color_black"
+            	android:textSize="@dimen/textsize_middle_1" />
+        	<TextView
+        	    android:id="@+id/tv_time"
+            	android:layout_width="wrap_content"
+            	android:layout_height="30dip"
+            	android:layout_centerVertical="true"
+            	android:layout_toLeftOf="@+id/btn_pay"
+            	android:layout_marginRight="10dip"
+            	android:gravity="center"
+            	
+            	android:textSize="@dimen/textsize_small"
+            	android:text="2015-12-12 00:00:00" />
+        	
+        	<TextView
+            	android:id="@+id/btn_pay"
+            	android:layout_width="wrap_content"
+            	android:layout_height="30dip"
+            	android:minWidth="60dip"
+            	android:layout_alignParentRight="true"
+            	android:background="@drawable/shape_button_red"
+            	android:text="付款"
+            	android:paddingLeft="5dip"
+            	android:paddingRight="5dip"
+            	android:gravity="center"
+            	android:textColor="@color/white"
+            	android:textSize="12sp"/>
+
+</RelativeLayout>

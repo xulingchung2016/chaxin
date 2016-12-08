@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <View 
+        style="@style/all_divider_all_screen"
+        
+        
+        />
+
+    <RelativeLayout
+        android:id="@+id/all_actionbar_contain_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/actionbar_background" >
+
+        <LinearLayout
+            android:id="@+id/all_actionbar_linear_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="8dip"
+            android:layout_marginTop="2dip"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingRight="18dip" >
+
+            <ImageView
+                android:id="@+id/all_actionbar_image_left"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/back" />
+
+            <TextView
+                android:id="@+id/all_actionbar_textview_back_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:text="我的中心"
+                android:textColor="@color/theme_actionbar_text_color_blue"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        
+
+        <TextView
+            android:id="@+id/all_actionbar_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="主页"
+            android:textColor="@color/theme_actionbar_text_color"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/all_actionbar_button_right_left"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:background="@color/theme_actionbar_background_color"
+                android:paddingLeft="6dip"
+                android:paddingRight="2dip"
+                android:text="11111"
+                android:visibility="gone"
+                android:textColor="@color/theme_text_normal_color_blue"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/all_actionbar_button_right"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="2dip"
+                android:background="@android:color/transparent"
+                android:paddingLeft="6dip"
+                android:paddingRight="6dip"
+                android:src="@drawable/actionbar_right_more"
+                android:textColor="@color/theme_text_normal_color_blue"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

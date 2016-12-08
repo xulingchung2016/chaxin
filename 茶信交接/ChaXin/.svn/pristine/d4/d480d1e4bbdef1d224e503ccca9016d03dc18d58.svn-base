@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="42dip"
+        android:background="@color/transWhite" >
+
+        <TextView
+            android:id="@+id/actionbar_homepager_style_textview_left"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:drawablePadding="1dip"
+            android:drawableRight="@drawable/arrows_down_white"
+            android:text=""
+            android:gravity="center_vertical"
+            android:layout_marginLeft="3dip"
+            android:textColor="@color/theme_actionbar_text_color_homepager"
+            android:textSize="@dimen/textsize_middle" />
+
+        <TextView
+             android:id="@+id/actionbar_homepager_style_textview_name_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="1dip"
+            android:text="购物车"
+            android:textColor="@color/blackColor"
+            android:textSize="@dimen/textsize_max" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/homepager_chat"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             android:text="消息"
+             android:visibility="gone"
+              android:id="@+id/actionbar_homepager_style_button_message_right"
+            android:textColor="@color/theme_actionbar_text_color_homepager"
+            android:textSize="@dimen/textsize_middle"  />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <RadioGroup
+        android:id="@+id/order_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/order_all"
+            style="@style/all_radiobutton_weigth1"
+            android:checked="true"
+            android:text="@string/order_all" />
+
+        <RadioButton
+            android:id="@+id/order_wait_pay"
+            style="@style/all_radiobutton_weigth1"
+            android:text="@string/order_wait_pay" />
+         <RadioButton
+            android:id="@+id/order_wait_fh"
+            style="@style/all_radiobutton_weigth1"
+            android:text="@string/order_wait_fh" />
+
+        <RadioButton
+            android:id="@+id/order_wait_received"
+            style="@style/all_radiobutton_weigth1"
+            android:text="@string/order_wait_received" />
+
+        <RadioButton
+            android:id="@+id/order_wait_comment"
+            style="@style/all_radiobutton_weigth1"
+            android:text="@string/order_wait_comment" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/sticky_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.newbrain.swipeRefresh.SwipyRefreshLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/swipyrefreshlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ExpandableListView
+                android:id="@+id/order_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@null"
+                android:childDivider="@color/line_gray"
+                android:childIndicatorLeft="0dp"
+                android:divider="@color/line_gray"
+                android:dividerHeight="1dp"
+                android:groupIndicator="@null"
+                android:scrollbarAlwaysDrawHorizontalTrack="false" >
+            </ExpandableListView>
+        </com.newbrain.swipeRefresh.SwipyRefreshLayout>
+
+        <FrameLayout
+            android:id="@+id/topGroup"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:orientation="vertical" >
+        </FrameLayout>
+    </FrameLayout>
+    <!--
+    <ListView
+        android:id="@+id/order_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/theme_background_color_gray"
+        android:dividerHeight="5dip" >
+    </ListView>
+    -->
+
+</LinearLayout>

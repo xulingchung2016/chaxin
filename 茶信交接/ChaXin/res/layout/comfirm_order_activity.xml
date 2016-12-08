@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+        <include android:id="@+id/rl_top" layout="@layout/all_actionbar" />
+        <ScrollView 
+            android:layout_below="@+id/rl_top"
+            android:layout_width="match_parent"
+        android:layout_height="match_parent"
+            >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/theme_background_color_gray"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+            android:id="@+id/comfirm_order_receice_address"
+            android:layout_width="fill_parent"
+            android:layout_height="52dip"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/comfirm_order_receice_Namephone"
+                    android:layout_marginLeft="6dip"
+                    android:text="收货人：茶信       13823210000"
+                    android:textColor="@color/theme_text_normal_color_black"
+                    android:textSize="@dimen/textsize_middle" />
+                 <TextView
+                     android:id="@+id/tv_add"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dip"
+                    android:text="点击添加地址"
+                    android:textColor="@color/theme_text_normal_color_black"
+                    android:textSize="@dimen/textsize_max" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/comfirm_order_receice_DetailAddress"
+                    android:layout_marginLeft="6dip"
+                    android:layout_marginTop="3dip"
+                    android:text="广东省深圳市龙华新区刚志龙商务中心"
+                    android:textColor="@color/theme_text_normal_color_black"
+                    android:textSize="@dimen/textsize_small" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/comfirm_order_receice_AddressListPageImage" 
+                style="@style/my_arrows_right" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/goods_detail_shop_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@color/white"
+            android:padding="3dip"
+            android:text="未知" />
+
+        <LinearLayout
+            android:id="@+id/ll_goods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+         
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/comfirm_order_choice_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/long_btn_bg"
+                android:hint="@string/comfirm_order_choice_edit"
+                android:paddingLeft="12dip"
+                android:textSize="@dimen/textsize_middle" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:background="@color/white"
+            android:padding="3dip"
+            android:text="@string/comfirm_order_pay_style" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:padding="6dip"
+                android:src="@drawable/zhifubao" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_weight="1"
+                android:text="@string/comfirm_order_choice_pay_style_zhifubao"
+                android:textColor="@color/theme_text_normal_color_black"
+                android:textSize="@dimen/textsize_middle" />
+
+             <CheckBox
+                android:id="@+id/check_box_zfb"
+                android:checked="true"
+                style="@style/all_check_button_square_drawable_left"
+                android:layout_marginRight="12dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:visibility="visible"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:padding="6dip"
+                android:src="@drawable/icon48_appwx_logo" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_weight="1"
+                android:text="微信支付"
+                android:textColor="@color/theme_text_normal_color_black"
+                android:textSize="@dimen/textsize_middle" />
+
+           <CheckBox
+                android:id="@+id/check_box_wxzf"
+                style="@style/all_check_button_square_drawable_left"
+                android:layout_marginRight="12dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:visibility="gone"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="40dip"
+                android:layout_height="40dip"
+                android:padding="6dip"
+                android:src="@drawable/yinlian" />
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_weight="1"
+                android:text="@string/comfirm_order_choice_pay_style_union"
+                android:textColor="@color/theme_text_normal_color_black"
+                android:textSize="@dimen/textsize_middle" />
+
+           <CheckBox
+                android:id="@+id/check_box_ylzf"
+                style="@style/all_check_button_square_drawable_left"
+                android:layout_marginRight="12dip" />
+        </LinearLayout>
+        
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:text="@string/comfirm_order_my_amounts"
+                android:textColor="@color/theme_text_normal_color_black"
+                android:textSize="@dimen/textsize_middle" />
+
+            <TextView
+                android:id="@+id/tv_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_weight="1"
+                android:text="￥0.00"
+                android:textColor="@color/theme_text_normal_color_red"
+                android:textSize="@dimen/textsize_middle" />
+
+            <CheckBox
+                android:id="@+id/check_box"
+                style="@style/all_check_button_square_drawable_left"
+                android:layout_marginRight="12dip" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dip"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:padding="6dip"
+                android:text="@string/comfirm_order_recommended"
+                android:textColor="@color/theme_text_normal_color_black"
+                android:textSize="@dimen/textsize_middle" />
+
+            <EditText
+                android:id="@+id/comfirm_order_input_recommended_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dip"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:hint="@string/comfirm_order_input_recommended_id"
+                android:textColor="@color/theme_text_normal_color_red"
+                android:textSize="@dimen/textsize_middle" />
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/detail_bottom_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:background="@color/theme_background_color_gray" >
+
+        <TextView
+            android:id="@+id/comfirm_order_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dip"
+            android:text="@string/comfirm_order_amounts"
+            android:layout_centerVertical="true"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+
+        <TextView
+            android:id="@+id/comfirm_order_tv_should_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_weight="1"
+            android:text="￥300.00"
+             android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/comfirm_order_tv"
+            android:textColor="@color/theme_text_normal_color_red"
+            android:textSize="@dimen/textsize_middle" />
+
+        <Button
+            android:id="@+id/detail_right_shop_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/detail_right_shop_car"
+            android:text="@string/comfirm_order_submit_order"
+            android:textColor="@color/theme_text_normal_color_white"
+            android:textSize="@dimen/textsize_middle" />
+    </RelativeLayout>
+
+</RelativeLayout>

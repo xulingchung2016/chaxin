@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/all_actionbar"
+        layout="@layout/all_actionbar" />
+
+    <View
+        android:id="@+id/tea_dingzhong_order_form_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/all_actionbar"
+        android:background="@color/theme_driver_color" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tea_dingzhong_order_form_view"
+        android:layout_above="@+id/layout_order">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/theme_background_color_gray"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/tea_dingzhong_order_form_contact"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:padding="@dimen/tea_space_15" >
+
+                <TextView
+                    android:id="@+id/tea_dingzhong_order_form_contact_way"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="收信人：茶信    13800138000"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_max" />
+
+                <TextView
+                    android:id="@+id/tea_dingzhong_order_form_contact_address"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tea_dingzhong_order_form_contact_way"
+                    android:text="广东深圳龙华新区港之龙商务中心A座504"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_middle" />
+                 <TextView
+                     android:id="@+id/tv_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:layout_marginLeft="6dip"
+                    android:layout_centerInParent="true"
+                    android:text="点击添加地址"
+                    android:textColor="@color/theme_text_normal_color_black"
+                    android:textSize="@dimen/textsize_max" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/arrows_right_gray" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/theme_driver_color"
+                android:paddingLeft="@dimen/tea_space_15"
+                android:paddingRight="@dimen/tea_space_15" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/tea_space_15"
+                android:paddingRight="@dimen/tea_space_15"
+                android:paddingTop="@dimen/tea_space_8"
+                android:paddingBottom="@dimen/tea_space_8">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/qq"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_max" />
+
+                <EditText
+                    android:id="@+id/tea_dingzhong_order_form_qq"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="@string/qq_hint"
+                    android:inputType="number"
+                    android:padding="@dimen/tea_space_8"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_max" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tea_dingzhong_order_form_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/tea_space_10"
+                android:background="@color/theme_background_color_white"
+                android:padding="@dimen/tea_space_15"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_max" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:layout_marginLeft="@dimen/tea_space_5"
+                android:layout_marginRight="@dimen/tea_space_5"
+                android:background="@drawable/shape_hidden_line" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/tea_space_15" >
+
+                <ImageView
+                    android:id="@+id/tea_dingzhong_order_form_icon"
+                    android:layout_width="72dip"
+                    android:layout_height="72dip"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/cha" />
+
+                <TextView
+                    android:id="@+id/tea_dingzhong_order_form_variety"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/tea_dingzhong_order_form_icon"
+                    android:layout_marginLeft="@dimen/tea_space_8"
+                    android:layout_toRightOf="@+id/tea_dingzhong_order_form_icon"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_max" />
+
+                <TextView
+                    android:id="@+id/tea_dingzhong_order_form_chabi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tea_dingzhong_order_form_chabi_num"
+                    android:layout_alignLeft="@+id/tea_dingzhong_order_form_variety"
+                    android:text="@string/tea_currency"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/textsize_middle" />
+
+                <TextView
+                    android:id="@+id/tea_dingzhong_order_form_chabi_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tea_dingzhong_order_form_icon"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@+id/tea_dingzhong_order_form_chabi"
+                    android:textColor="@color/redColor"
+                    android:textSize="@dimen/textsize_max" />
+
+                <ImageView
+                    android:id="@+id/iv_tea_dingzhong_order_form_reduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tea_dingzhong_order_form_chabi_num"
+                    android:layout_toLeftOf="@+id/tv_tea_dingzhong_order_form_amount"
+                    android:src="@drawable/reduce" />
+
+                <TextView
+                    android:id="@+id/tv_tea_dingzhong_order_form_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_tea_dingzhong_order_form_reduce"
+                    android:layout_alignTop="@+id/iv_tea_dingzhong_order_form_reduce"
+                    android:layout_toLeftOf="@+id/iv_tea_dingzhong_order_form_plus"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/tea_space_8"
+                    android:paddingRight="@dimen/tea_space_8"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_max" />
+
+                <ImageView
+                    android:id="@+id/iv_tea_dingzhong_order_form_plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/iv_tea_dingzhong_order_form_reduce"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/plus" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/et_tea_dingzhong_order_form_message"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tea_dingzhong_order_form_icon"
+                    android:layout_marginTop="@dimen/tea_space_10"
+                    android:background="@drawable/longbutton_grey"
+                    android:hint="@string/message_hint"
+                    android:inputType="number"
+                    android:maxLength="85"
+                    android:padding="@dimen/tea_space_10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_max" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/layout_order"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tabbar"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/tea_space_15"
+        android:paddingRight="@dimen/tea_space_15"
+        android:paddingTop="@dimen/tea_space_8"
+        android:paddingBottom="@dimen/tea_space_8"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/tv_pay_chabi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/pay_chabi"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textsize_max" />
+
+        <TextView
+            android:id="@+id/tea_dingzhong_order_form_pay_chabi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tv_pay_chabi"
+            android:text="380.00"
+            android:textColor="@color/redColor"
+            android:textSize="@dimen/textsize_max" />
+
+        <Button
+            android:id="@+id/btn_submit_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/but_red"
+            android:text="@string/submit_orders"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_max"/>
+    </RelativeLayout>
+
+</RelativeLayout>

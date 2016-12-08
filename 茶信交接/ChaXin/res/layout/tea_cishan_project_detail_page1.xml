@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:layout_above="@+id/tea_cishan_project_detail_imagepager_indicator" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/top_image_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/viewflow_heigth" >
+
+            <com.viewpagerindicator.MyDirectionalViewPager
+                android:id="@+id/tea_cishan_project_detail_imagepager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/viewflow_heigth" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/total_data_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_image_layout"
+            android:background="@color/white"
+            android:paddingBottom="4dip"
+            android:paddingTop="4dip" >
+
+            <RelativeLayout
+                android:id="@+id/tea_money_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/center_line"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/total_donate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="100000"
+                    android:textColor="@color/theme_text_normal_color_orange"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_donate"
+                    android:layout_centerHorizontal="true"
+                    android:text="已筹款（茶币）"
+                    android:textColor="@color/theme_text_normal_color_gary"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/center_line"
+                android:layout_width="1px"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tea_money_layout"
+                android:layout_alignTop="@+id/tea_money_layout"
+                android:layout_centerInParent="true"
+                android:background="@color/theme_text_normal_color_gary" />
+
+            <RelativeLayout
+                android:id="@+id/tea_love_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/center_line"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/total_love"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="50000"
+                    android:textColor="@color/theme_text_normal_color_orange"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/total_love"
+                    android:layout_centerHorizontal="true"
+                    android:text="累计爱心（份）"
+                    android:textColor="@color/theme_text_normal_color_gary"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/project_content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/total_data_layout"
+            android:layout_marginTop="10dip"
+            android:background="@color/white" >
+
+            <TextView
+                android:id="@+id/content_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip"
+                android:text="关爱失独老人"
+                android:textColor="@color/theme_text_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/content_title"
+                android:padding="10dip"
+                android:text="关爱失独老人关爱失独老人关爱失独老人关爱失独老人关爱失独老人关爱失独老人关爱失独老人关爱失独老人关爱失独老人关爱失独老人关爱失独老人关爱失独老人关爱失独老人"
+                android:textColor="@color/theme_text_normal_color_gary"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/actuator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/project_content_layout"
+            android:layout_marginTop="10dip"
+            android:background="@color/white"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/actuator_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="执行机构"
+                android:textColor="@color/theme_text_normal_color_orange"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/actuator_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/actuator_text"
+                android:text="龙泉驿区新市民协会"
+                android:textColor="@color/theme_text_normal_color_gary"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/partition_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/actuator_layout"
+            android:background="@color/theme_text_normal_color_gary" />
+
+        <RelativeLayout
+            android:id="@+id/receive_actuator_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/partition_line"
+            android:background="@color/white"
+            android:padding="10dip" >
+
+            <TextView
+                android:id="@+id/receive_actuator_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="善款接受"
+                android:textColor="@color/theme_text_normal_color_orange"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/receive_actuator_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_toRightOf="@+id/receive_actuator_text"
+                android:text="成都慈善总会"
+                android:textColor="@color/theme_text_normal_color_gary"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/more_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/receive_actuator_layout"
+            android:layout_centerHorizontal="true"
+            android:padding="20dip"
+            android:gravity="bottom"
+            android:text="下拉查看图文详情"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</ScrollView>

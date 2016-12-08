@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/more_dialog_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/more_2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/home_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/backhome"
+            style="@style/MoreDialog_TextItem"
+            android:text="首页" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/msg_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <View 
+            android:id="@+id/msg_line"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/msg"
+            android:layout_alignRight="@+id/msg"
+            android:background="@color/theme_text_normal_color_light_gary"/>
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msg_line"
+            android:drawableLeft="@drawable/readingmessage"
+            style="@style/MoreDialog_TextItem"
+            android:text="消息" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/share_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <View 
+            android:id="@+id/share_line"
+            android:layout_width="wrap_content"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/share"
+            android:layout_alignRight="@+id/share"
+            android:background="@color/theme_text_normal_color_light_gary"/>
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/share_line"
+            android:drawableLeft="@drawable/share"
+            style="@style/MoreDialog_TextItem"
+            android:text="分享" />
+    </RelativeLayout>
+
+</LinearLayout>

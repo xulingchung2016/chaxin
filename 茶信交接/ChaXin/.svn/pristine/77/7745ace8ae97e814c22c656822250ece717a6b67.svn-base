@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <include layout="@layout/all_actionbar"/>
+    
+
+    <LinearLayout
+        style="@style/personal_center_linear"
+        android:layout_marginTop="1dip" >
+
+       <LinearLayout
+            android:id="@+id/ll_change_loginpass"
+            style="@style/my_four_linear_horizontal" >
+
+            <TextView
+                style="@style/set_textview_style"
+                android:text="@string/change_login_pw" />
+
+            <ImageView style="@style/my_arrows_right" />
+        </LinearLayout>
+
+        <View style="@style/personal_center_view_divider" />
+
+         <LinearLayout
+            android:id="@+id/ll_change_moneypsss"
+            style="@style/my_four_linear_horizontal" >
+
+            <TextView
+                style="@style/set_textview_style"
+                android:text="@string/change_money_pw" />
+
+            <ImageView style="@style/my_arrows_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+    
+     <Button 
+        android:id="@+id/change_login_btn_finish"
+        style="@style/all_btn_orange_all_screen"
+        android:visibility="gone"
+        android:text="@string/exit"
+        />
+
+</LinearLayout>

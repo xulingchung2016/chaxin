@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/theme_background_color_gray">
+
+    <com.viewpagerindicator.MyDirectionalViewPager
+        android:id="@+id/directional_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tea_dingzhong_order_bottom"
+        android:layout_gravity="center_horizontal"/>
+    <RelativeLayout
+        android:id="@+id/tea_dingzhong_order_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tabbar"
+        android:paddingBottom="@dimen/tea_space_5"
+        android:paddingLeft="@dimen/tea_space_15"
+        android:paddingRight="@dimen/tea_space_15"
+        android:paddingTop="@dimen/tea_space_5" >
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableTop="@drawable/shoucang"
+            android:text="@string/shoucang"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textsize_max" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/tv_consultation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:layout_toRightOf="@+id/tv_shoucang"
+            android:drawableTop="@drawable/consultation"
+            android:text="@string/consultation"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/textsize_max" />
+
+        <Button
+            android:id="@+id/btn_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/but_orange"
+            android:text="@string/order"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_max" />
+    </RelativeLayout>
+
+</RelativeLayout>

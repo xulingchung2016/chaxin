@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/all_actionbar"
+       
+        />
+    
+    <TextView
+        android:id="@+id/bank_card_tv_add_card"
+            android:padding="8dip"
+            android:layout_width="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="@string/add_bank_card" />
+    
+    
+ <!--    <ListView 
+        android:id="@+id/bank_card_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:background="@color/white"
+        ></ListView> -->
+         <com.baoyz.swipemenulistview.SwipeMenuListView
+        android:id="@+id/bank_card_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+         android:background="@color/white"
+        android:divider="@color/theme_text_normal_color_gary"
+        android:dividerHeight="0.6dip" />
+
+</LinearLayout>

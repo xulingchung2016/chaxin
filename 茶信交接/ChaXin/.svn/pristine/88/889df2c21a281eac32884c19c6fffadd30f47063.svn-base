@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        android:id="@+id/set_person_data"
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style"
+            android:text="@string/person_data_head_picture" />
+
+        <ImageView
+            android:id="@+id/person_data_head_picture_imageview"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:padding="3dip"
+            android:src="@drawable/my_user" />
+
+        <ImageView style="@style/my_arrows_right" />
+    </LinearLayout>
+
+    <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        android:id="@+id/person_data_nice_name"
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style"
+            android:text="@string/person_data_nice_name" />
+
+        <TextView
+            android:id="@+id/person_data_nice_name_textview"
+            style="@style/set_textview_style_small"
+            android:text="" />
+
+        <ImageView style="@style/my_arrows_right" />
+    </LinearLayout>
+    
+     <View style="@style/all_divider_all_screen" />
+     <LinearLayout
+        android:id="@+id/person_data_sex"
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style"
+            android:text="@string/person_data_sex" />
+
+        <TextView
+            android:id="@+id/person_data_sex_textview"
+            style="@style/set_textview_style_small"
+            android:text="保密" />
+
+        <ImageView style="@style/my_arrows_right" />
+    </LinearLayout>
+    
+       <View style="@style/all_divider_all_screen" />
+     <LinearLayout
+        android:id="@+id/person_data_receive_goods_manager"
+        style="@style/my_four_linear_horizontal" >
+
+        <TextView
+            style="@style/set_textview_style"
+            android:text="@string/person_data_receive_goods_manager" />
+
+       
+
+        <ImageView style="@style/my_arrows_right" />
+    </LinearLayout>
+    
+
+</LinearLayout>

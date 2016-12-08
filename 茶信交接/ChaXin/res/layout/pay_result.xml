@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="fill_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+	 	android:layout_height="fill_parent">
+	 	<RelativeLayout
+        android:id="@+id/lay_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#0f000000" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/yy_back" >
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="15dp"
+            android:background="#00000000"
+            android:text="微信支付"
+            android:textColor="@color/Black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    
+	<TextView
+	    android:id="@+id/tv_result"
+	    android:layout_width="fill_parent"
+	 	android:layout_height="fill_parent"
+		android:gravity="center"
+	 	android:textSize="20dp"
+	 	 android:textColor="@color/lay_orange"
+	 	android:text="@string/pay_result_tip"/>
+	
+</LinearLayout>

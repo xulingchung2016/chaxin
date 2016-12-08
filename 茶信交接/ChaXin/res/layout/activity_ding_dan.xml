@@ -1,0 +1,705 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_basic_color"
+    tools:context=".DingDanActivity" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_title"
+        android:paddingBottom="60dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/lay_xiadan"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/main_write_color"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:weightSum="5" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/main_write_color" >
+
+                    <TextView
+                        android:id="@+id/xia_dan_ren"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/main_write_color"
+                        android:gravity="center_vertical"
+                        android:text="  "
+                        android:textColor="@color/txt_black"
+                        android:textSize="15dp" />
+					 <TextView
+                        android:id="@+id/tv_tip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/xia_dan_ren"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/main_write_color"
+                        android:text="点击添加地址"
+                        android:gravity="center"
+                        android:textColor="@color/txt_black"
+                        android:textSize="15dp" />
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/xia_dan_ren"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="2dp"
+                        android:background="@color/main_write_color"
+                        android:gravity="center_vertical"
+                        android:text=""
+                        android:textColor="@color/txt_black"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="4"
+                    android:background="@color/main_write_color" >
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/yy_more_info" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lin_spi_1"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/lay_xiadan"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/txt_time" />
+
+            <LinearLayout
+                android:id="@+id/lay_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/lin_spi_1"
+                android:background="@color/main_write_color"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:weightSum="5" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/main_write_color" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/main_write_color"
+                        android:gravity="center_vertical"
+                        android:text="预约时间"
+                        android:textColor="@color/txt_time"
+                        android:textSize="15dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dip"
+                    android:background="@color/main_write_color" >
+
+                    <TextView
+                        android:id="@+id/tv_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@color/main_write_color"
+                        android:gravity="right|center_vertical"
+                        android:text="未选择"
+                        android:textColor="@color/txt_black"
+                        android:textSize="15sp" >
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/main_write_color" >
+
+                    <ImageButton
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/yy_more_info" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_time"
+                android:layout_marginTop="5dp"
+                android:background="@color/main_write_color"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/txt_liren_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/main_write_color"
+                    android:text="茶点点"
+                    android:textColor="@color/txt_time"
+                    android:textSize="15dp" />
+
+                <View
+                    android:id="@+id/lin_spi_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/txt_liren_name"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/txt_time" />
+
+                <ImageView
+                    android:id="@+id/txt_logo"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/lin_spi_2"
+                    android:layout_margin="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/yy_liren_logo" >
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/txt_memo"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lin_spi_2"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txt_logo"
+                    android:background="@color/main_write_color"
+                    android:text=""
+                    android:textColor="@color/txt_time"
+                    android:textSize="14dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/txt_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_memo"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/txt_logo"
+                    android:background="@color/main_write_color"
+                    android:text="￥ 0.0"
+                    android:textColor="@color/txt_price"
+                    android:textSize="15dp" />
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="50dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/yy_more_info" />
+
+                <EditText
+                    android:id="@+id/et_liuyan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_num"
+                    android:layout_margin="10dp"
+                    android:background="@color/main_basic_color"
+                    android:hint="选填：给丽人的留言（85字以內）"
+                    android:paddingBottom="15dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="15dp"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_info"
+                android:layout_marginTop="5dp"
+                android:background="@color/main_write_color"
+                android:paddingBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/pay_way"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/main_write_color"
+                    android:text="支付方式"
+                    android:textColor="@color/txt_time"
+                    android:textSize="15dp" />
+
+                <View
+                    android:id="@+id/lin_spi_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/pay_way"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/txt_time" />
+
+                <LinearLayout
+                    android:id="@+id/lay_zhifubao"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/lin_spi_3"
+                    android:background="@color/main_write_color"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/main_write_color" >
+
+                        <ImageView
+                            android:id="@+id/zhifubao_logo"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/zhifubao" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/zhifubao_logo"
+                            android:background="@color/main_write_color"
+                            android:text="支付宝支付"
+                            android:textColor="@color/txt_time"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/main_write_color" >
+
+                        <ImageButton
+                            android:id="@+id/img_seleted_zhifubao"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/check_box_checked_square"
+                            android:visibility="visible" >
+                        </ImageButton>
+                    </RelativeLayout>
+                </LinearLayout>
+                 <LinearLayout
+                    android:id="@+id/lay_weixin"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:visibility="visible"
+                    android:layout_below="@+id/lay_zhifubao"
+                    android:background="@color/main_write_color"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/main_write_color" >
+
+                        <ImageView
+                            android:id="@+id/weixin_logo"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/icon48_appwx_logo" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/weixin_logo"
+                            android:background="@color/main_write_color"
+                            android:text="微信支付"
+                            android:textColor="@color/txt_time"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/main_write_color" >
+
+                        <ImageButton
+                            android:id="@+id/img_seleted_weixin"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/check_box_normal_square"
+                            android:visibility="visible" >
+                        </ImageButton>
+                    </RelativeLayout>
+                </LinearLayout>
+                 <LinearLayout
+                    android:id="@+id/lay_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:visibility="gone"
+                    android:layout_below="@+id/lay_weixin"
+                    android:background="@color/main_write_color"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/main_write_color" >
+
+                        <ImageView
+                            android:id="@+id/bank_logo"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_margin="10dp"
+                            android:background="@drawable/yinlian" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/bank_logo"
+                            android:background="@color/main_write_color"
+                            android:text="支付宝支付"
+                            android:textColor="@color/txt_time"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/main_write_color" >
+
+                        <ImageButton
+                            android:id="@+id/img_seleted_bank"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/check_box_normal_square"
+                            android:visibility="visible" >
+                        </ImageButton>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/lay_yinlian"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_below="@+id/lay_bank"
+                    
+                    android:background="@color/main_write_color"
+                    android:orientation="horizontal"
+                    android:weightSum="3" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/main_write_color" >
+
+                        <!-- <ImageView
+                            android:id="@+id/yl_logo"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_margin="10dp"
+                            android:visibility="gone"
+                            android:background="@drawable/yy_yinlian" /> -->
+						
+						 <TextView
+						     android:id="@+id/tv_xj"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:background="@color/main_write_color"
+                            android:textColor="@color/txt_time"
+                            android:text="现金支付"
+                            android:textSize="15dp" />
+                        <TextView
+                            android:id="@+id/tv_cash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/tv_xj"
+                            android:background="@color/main_write_color"
+                            android:textColor="@color/red"
+                            android:text="0"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@color/main_write_color" >
+
+                        <ImageButton
+                            android:id="@+id/img_seleted_yinlian"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/check_box_normal_square"
+                            android:visibility="visible" >
+                        </ImageButton>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_pay_way"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lay_pay"
+                android:visibility="gone"
+                android:layout_marginTop="5dp"
+                android:paddingBottom="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/lay_chabi"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:weightSum="3" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="可用19茶币抵用19元"
+                            android:textColor="@color/txt_time"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <ImageButton
+                            android:id="@+id/btn_chabi_boolean"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/yy_open" >
+                        </ImageButton>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/lin_spi_5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@+id/lay_chabi"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/txt_time" />
+
+                <LinearLayout
+                    android:id="@+id/lay_xianjin"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/lin_spi_5"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:weightSum="3" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="我的现金"
+                            android:textColor="@color/txt_time"
+                            android:textSize="15dp" >
+                        </TextView>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2" >
+
+                        <ImageButton
+                            android:id="@+id/btn_xianjing_boolean"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/yy_open" >
+                        </ImageButton>
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/lay_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/title_color" >
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/yy_back" >
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/title_color"
+            android:text="确认订单"
+            android:textColor="@color/txt_black"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/main_write_color"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_write_color" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@color/main_write_color"
+                android:gravity="center_horizontal"
+                android:text="应付金额："
+                android:textColor="@color/txt_black"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_write_color" >
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@color/main_write_color"
+                android:gravity="center_horizontal"
+                android:text="￥0"
+                android:textColor="@color/txt_price"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/main_write_color" >
+
+            <ImageButton
+                android:id="@+id/btn_save"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/yy_submit_order"
+                android:paddingRight="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

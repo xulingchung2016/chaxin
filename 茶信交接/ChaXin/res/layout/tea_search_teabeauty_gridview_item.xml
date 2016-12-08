@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/beauty_icon"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/cha_cha" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/beauty_icon"
+        android:padding="10dip"
+        android:layout_centerHorizontal="true" >
+
+        <TextView
+            android:id="@+id/beauty_nu_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_text_color"
+            android:textSize="15sp"
+            android:text="编号:" />
+
+        <TextView
+            android:id="@+id/beauty_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/beauty_nu_text"
+            android:layout_alignBottom="@+id/beauty_nu_text"
+            android:layout_toRightOf="@+id/beauty_nu_text"
+            android:textColor="@color/theme_text_color"
+            android:textSize="15sp"
+            android:text="10000" />
+
+        <ImageView
+            android:id="@+id/beauty_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/beauty_nu"
+            android:layout_toRightOf="@+id/beauty_nu"
+            android:src="@drawable/gold" />
+
+        <TextView
+            android:id="@+id/beauty_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/beauty_nu_text"
+            android:layout_alignParentLeft="true"
+            android:textColor="@color/theme_text_normal_color_red"
+            android:textSize="15sp"
+            android:text="￥1000" />
+
+        <TextView
+            android:id="@+id/deal_nu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/beauty_price"
+            android:layout_alignBottom="@+id/beauty_price"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

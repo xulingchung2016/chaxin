@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/sc_root"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/viewflow_heigth" >
+
+                <com.newbrain.viewflow.ViewFlow
+                    android:id="@+id/tab1_viewflow"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/viewflow_heigth" >
+                </com.newbrain.viewflow.ViewFlow>
+
+                <com.newbrain.viewflow.ViewFlowIndicator
+                    android:id="@+id/tab1_viewflow_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="6dip"
+                    android:layout_marginRight="6dip" >
+                </com.newbrain.viewflow.ViewFlowIndicator>
+            </RelativeLayout>
+
+            <com.newbrain.customview.MyGridview
+                android:id="@+id/tab1_gridview"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gridview_background"
+                android:numColumns="4"
+                android:paddingBottom="8dip"
+                android:paddingTop="5dip"
+                android:verticalSpacing="4dip"
+                 >
+            </com.newbrain.customview.MyGridview>
+
+            <!-- 限时抢购 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/homepager_magin"
+                android:layout_marginRight="@dimen/homepager_magin"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                 >
+
+                <LinearLayout
+                    android:id="@+id/ll_good"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/title_tip_orange" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dip"
+                        android:layout_weight="1"
+                        android:text="每日商品推荐"
+                        android:textColor="@color/theme_text_normal_color_red"
+                        android:textSize="@dimen/textsize_max" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/time_background"
+                        android:gravity="center"
+                        android:text="01:30:25"
+                        android:visibility="gone"
+                        android:textColor="@color/theme_text_normal_color"
+                        android:textSize="@dimen/textsize_middle" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrows_right_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/homepager_limite_time_shop_linear1"
+                        style="@style/homepager_xsqgclrtj_linear" >
+
+                        <TextView
+                            android:id="@+id/homepager_limite_time_shop_textview1"
+                            style="@style/homepager_xsqgclrtj_textview"
+                             android:lines="2"
+                            android:text="@string/smallteafffffff" />
+
+                        <ImageView
+                            android:id="@+id/homepager_limite_time_shop_imageview1"
+                            style="@style/homepager_xsqgclrtj_imageview"
+                            android:src="@drawable/cha_cha" />
+                    </LinearLayout>
+                    
+                    <View 
+                        
+                        style="@style/all_divider_vertic_all_screen"
+                        android:layout_marginTop="6dip"
+                        android:layout_marginBottom="6dip"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/homepager_limite_time_shop_linear2"
+                        style="@style/homepager_xsqgclrtj_linear" >
+
+                        <TextView
+                            android:id="@+id/homepager_limite_time_shop_textview2"
+                            style="@style/homepager_xsqgclrtj_textview"
+                             android:lines="2"
+                            android:text="@string/smallteafffffff" />
+
+                        <ImageView
+                            android:id="@+id/homepager_limite_time_shop_imageview2"
+                            style="@style/homepager_xsqgclrtj_imageview"
+                            android:src="@drawable/cha_cha" />
+                    </LinearLayout>
+
+                     <View 
+                        
+                        style="@style/all_divider_vertic_all_screen"
+                        android:layout_marginTop="6dip"
+                        android:layout_marginBottom="6dip"
+                        />
+                    
+                    <LinearLayout
+                        android:id="@+id/homepager_limite_time_shop_linear3"
+                        style="@style/homepager_xsqgclrtj_linear" >
+
+                        <TextView
+                            android:id="@+id/homepager_limite_time_shop_textview3"
+                            style="@style/homepager_xsqgclrtj_textview"
+                             android:lines="2"
+                            android:text="@string/smallteafffffff" />
+
+                        <ImageView
+                            android:id="@+id/homepager_limite_time_shop_imageview3"
+                            style="@style/homepager_xsqgclrtj_imageview"
+                            android:src="@drawable/cha_cha" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 茶丽人推荐 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/homepager_magin"
+                android:layout_marginRight="@dimen/homepager_magin"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical"
+                 >
+
+                <LinearLayout
+                    android:id="@+id/ll_lr"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/title_tip_orange" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dip"
+                        android:layout_weight="1"
+                        android:text="@string/beautiful_men_recommed"
+                        android:textColor="@color/theme_text_normal_color"
+                        android:textSize="@dimen/textsize_middle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:text="@string/more"
+                        android:textColor="@color/theme_text_normal_color"
+                        android:textSize="@dimen/textsize_small" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrows_right_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/beautiful_men_recommed_linear1"
+                        style="@style/homepager_xsqgclrtj_linear" >
+
+                        <TextView
+                            android:id="@+id/beautiful_men_recommed_textview1"
+                            style="@style/homepager_xsqgclrtj_textview"
+                            android:lines="2"
+                            android:text="@string/smallteafffffff" />
+
+                        <ImageView
+                            android:id="@+id/beautiful_men_recommed_imageview1"
+                            style="@style/homepager_xsqgclrtj_imageview"
+                            android:src="@drawable/cha_cha" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/beautiful_men_recommed_linear2"
+                        style="@style/homepager_xsqgclrtj_linear" >
+
+                        <TextView
+                            android:id="@+id/beautiful_men_recommed_textview2"
+                            style="@style/homepager_xsqgclrtj_textview"
+                             android:lines="2"
+                            android:text="@string/smallteafffffff" />
+
+                        <ImageView
+                            android:id="@+id/beautiful_men_recommed_imageview2"
+                            style="@style/homepager_xsqgclrtj_imageview"
+                            android:src="@drawable/cha_cha" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/beautiful_men_recommed_linear3"
+                        style="@style/homepager_xsqgclrtj_linear" >
+
+                        <TextView
+                            android:id="@+id/beautiful_men_recommed_textview3"
+                            style="@style/homepager_xsqgclrtj_textview"
+                             android:lines="2"
+                            android:text="@string/smallteafffffff" />
+
+                        <ImageView
+                            android:id="@+id/beautiful_men_recommed_imageview3"
+                            style="@style/homepager_xsqgclrtj_imageview"
+                            android:src="@drawable/cha_cha" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 茶企招商 -->
+
+           <!--  <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/homepager_magin"
+                android:layout_marginRight="@dimen/homepager_magin"
+                android:layout_marginTop="10dip"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/title_tip_blue" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dip"
+                        android:layout_weight="1"
+                        android:text="@string/tea_company_business"
+                        android:textColor="@color/theme_text_normal_color"
+                        android:textSize="@dimen/textsize_middle" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/more"
+                        android:textColor="@color/theme_text_normal_color"
+                        android:textSize="@dimen/textsize_small" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/arrows_right_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/homepager_tea_company_business_imageview1"
+                        style="@style/homepager_tea_company_business_imageview"
+                        android:src="@drawable/cha_cha" />
+
+                    <ImageView
+                        android:id="@+id/homepager_tea_company_business_imageview2"
+                        style="@style/homepager_tea_company_business_imageview"
+                        android:src="@drawable/cha_cha" />
+
+                    <ImageView
+                        android:id="@+id/homepager_tea_company_business_imageview3"
+                        style="@style/homepager_tea_company_business_imageview"
+                        android:src="@drawable/cha_cha" />
+
+                    <ImageView
+                        android:id="@+id/homepager_tea_company_business_imageview4"
+                        style="@style/homepager_tea_company_business_imageview"
+                        android:src="@drawable/cha_cha" />
+                </LinearLayout>
+            </LinearLayout> -->
+
+            <!-- 更多精彩 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/homepager_magin"
+                android:layout_marginRight="@dimen/homepager_magin"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal" >
+
+                <View style="@style/homepager_view" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dip"
+                    android:paddingRight="5dip"
+                    android:text="@string/more_happy_wait_you"
+                    android:textColor="@color/theme_bright_not"
+                    android:textSize="@dimen/textsize_small" />
+
+                <View style="@style/homepager_view" />
+            </LinearLayout>
+            
+            
+            
+            <GridView
+                android:id="@+id/tab1_gridview_more_happy_wait_you"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gridview_background"
+                android:numColumns="4"
+                android:paddingBottom="8dip"
+                android:paddingTop="5dip"
+                android:verticalSpacing="4dip"
+                 >
+            </GridView>
+            
+            
+            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/all_actionbar_homepager" />
+
+</RelativeLayout>

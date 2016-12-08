@@ -1,0 +1,87 @@
+<resources>
+
+<!-- 定种茶苗 -->
+	<dimen name="tea_viewflow_heigth">200dip</dimen>
+	<dimen name="tea_order_attention_heigth">150dip</dimen>
+	<dimen name="tea_space_15">15.0dip</dimen>
+    <dimen name="tea_space_10">10.0dip</dimen>
+    <dimen name="tea_space_8">8.0dip</dimen>
+    <dimen name="tea_space_5">5.0dip</dimen>
+    <dimen name="tea_space_3">3.0dip</dimen>
+    
+     <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="titlebar_height_city_choose">98dp</dimen>
+    <dimen name="imgadd_height">100dp</dimen>
+    <dimen name="imgadd_width">100dp</dimen>
+    <dimen name="claim_first_item_height">52dp</dimen>
+    <dimen name="city_used">180dp</dimen>
+    <dimen name="menu_right">129dp</dimen>
+    <dimen name="line_height">0.6dp</dimen>
+    <dimen name="huodong_add_paddding_left">15dp</dimen>
+    <!-- Scheme common -->
+    <dimen name="divider_width">1dp</dimen>
+    <dimen name="zero">0dp</dimen>
+
+
+    <!-- index页面 -->
+    <dimen name="offset_noData_text_top">30dp</dimen>
+    <dimen name="textsize_noData_text">18sp</dimen>
+    <dimen name="offset_left">14dp</dimen>
+    <dimen name="index_offset">4dp</dimen>
+    <dimen name="index_map_width">25dp</dimen>
+    <dimen name= "index_map_hight">34dp</dimen>
+    <dimen name="index_input_height">32dp</dimen>
+
+    <!-- 详情页 -->
+    <dimen name="title_height">48dp</dimen>
+    <dimen name="offset_title_left">15dp</dimen>
+    <dimen name="title_text_size">18sp</dimen>
+    <dimen name="detail_common_offset_left">12dp</dimen>
+    <dimen name="detail_img_offset_top">8dp</dimen>
+    <dimen name="detail_img_size">80dp</dimen>
+    <dimen name="detail_img_offset_right">11dp</dimen>
+    <dimen name="detail_txt_name_size">16sp</dimen>
+    <dimen name="detail_size_img_des">12sp</dimen>
+    <dimen name="detail_size_name_address">13sp</dimen>
+    <dimen name="identify_text_size">14sp</dimen>
+    <dimen name="titlebar_height">48dp</dimen>
+    <dimen name="detail_offset_right">12dp</dimen>
+    <dimen name="detail_phone_icon_size">20dp</dimen>
+
+    <!-- 路径规划页 -->
+    <dimen name="bus_strategy_corners">3dp</dimen>
+    <dimen name="busroute_offset">12dp</dimen>
+    <dimen name="busroute_line_des_height">35dp</dimen>
+    <dimen name="busroute_text_size_big">16sp</dimen>
+    <dimen name="busroute_text_size_small">13sp</dimen>
+    
+     <dimen name="dimen_thumbnail_grid_width">130dip</dimen>
+    <dimen name="dimen_thumbnail_grid_height">160dip</dimen>
+    <dimen name="dimen_thumbnail_desc_height">26dip</dimen>
+    <dimen name="dimen_album_thumbnail_size">70dip</dimen>
+    
+    <dimen name="popupwindow_item_height">50dip</dimen>
+    <dimen name="popupwindow_margin">50dip</dimen>
+    <dimen name="listview_item_height">65dip</dimen>
+    <dimen name="left_size">20sp</dimen>
+    <dimen name="dimen_navigator_bar_height">45dip</dimen>
+    <dimen name="left_xxxxxh_size">70sp</dimen>
+    <dimen name="left_xxxxxhd_size">65sp</dimen>
+      <dimen name="left_xxxxh_size">24sp</dimen>
+    <dimen name="left_xxxh_size">22sp</dimen>
+    <dimen name="left_xxh_size">20sp</dimen>
+    <dimen name="left_xh_size">18sp</dimen>
+    <dimen name="left_h_size">16sp</dimen>
+    <dimen name="text_m_size">14sp</dimen>
+    <dimen name="left_s_size">12sp</dimen>
+    <dimen name="left_l_size">12sp</dimen>
+    <dimen name="left_xl_size">10sp</dimen>
+    <dimen name="left_xxl_size">8sp</dimen>
+    <dimen name="left_head_width">88dip</dimen>
+     <dimen name="left_head_width2">115dip</dimen>
+    <dimen name="left_item_height">45dip</dimen>
+    <dimen name="left_item_li">40dip</dimen>
+      <dimen name="left_item_xli">40dip</dimen>
+       <dimen name="left_lushu_icon_dimen">45dip</dimen>
+    
+</resources>

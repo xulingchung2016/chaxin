@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="450dip"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_title"
+        style="@style/all_tv_wrap_middle_black"
+        android:padding="10dip"
+        android:text="标题"
+        android:textSize="@dimen/textsize_max_1" />
+
+    <View style="@style/all_divider_all_screen" />
+
+    <TextView
+        android:id="@+id/dialog_content_tv"
+        style="@style/all_tv_wrap_middle_gray"
+        android:minHeight="60dip"
+        android:layout_marginTop="4dip"
+        android:padding="5dip"
+        android:text="500元" />
+
+    <EditText
+        android:id="@+id/dialog_content_et"
+        style="@style/all_et_fw_bg_white_shape_gray" />
+    <EditText
+        android:id="@+id/dialog_content_et2"
+        android:inputType="textPassword"
+        style="@style/all_et_fw_bg_white_shape_gray" />
+
+    <ImageView
+        android:id="@+id/dialog_content_img"
+        android:visibility="gone"
+        style="@style/all_image_ww_fixXY" />
+
+    <View style="@style/all_divider_all_screen" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_btn_cancel"
+            style="@style/all_dialog_btn"
+            android:text="@string/cancel" />
+
+        <View style="@style/all_divider_vertic_all_screen" />
+
+        <Button
+            android:id="@+id/dialog_btn_confirm"
+            style="@style/all_dialog_btn"
+            android:text="@string/comfirm" />
+    </LinearLayout>
+
+</LinearLayout>

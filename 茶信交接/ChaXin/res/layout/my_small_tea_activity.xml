@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <View style="@style/all_divider_all_screen" />
+
+    <com.newbrain.customview.XListView
+        android:background="@color/white"
+        android:id="@+id/small_tea_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/theme_background_color_gray"
+        android:dividerHeight="8dip" />
+
+</LinearLayout>

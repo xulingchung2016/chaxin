@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingTop="4dip"
+        android:paddingBottom="4dip"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/income_item_name"
+            style="@style/all_tv_wrap_middle_black"
+            android:text="茶商城消费" />
+
+        <TextView
+            android:id="@+id/income_item_date"
+            style="@style/all_tv_wrap_small_gray"
+            android:text="2015-12-23" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/income_item_money"
+        style="@style/all_tv_wrap_middle_black"
+        android:text="-200"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/all_8_dip"
+        android:textColor="@color/theme_text_normal_color_orange" />
+
+</RelativeLayout>

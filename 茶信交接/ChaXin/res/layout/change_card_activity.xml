@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/change_card_add_card"
+        style="@style/my_four_linear_horizontal"
+        android:layout_marginTop="8dip" >
+
+        <TextView
+            style="@style/my_four_textview_horizontal"
+            android:layout_margin="8dip"
+            android:text="@string/my_all_order" />
+
+        <ImageView style="@style/my_arrows_right" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/change_card_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/theme_driver_color"
+        android:dividerHeight="1dip" >
+    </ListView>
+
+</LinearLayout>

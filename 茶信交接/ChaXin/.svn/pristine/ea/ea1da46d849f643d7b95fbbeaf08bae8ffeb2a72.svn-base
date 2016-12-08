@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/goods_listview_item_imageview"
+        android:layout_width="56dip"
+        android:layout_height="56dip"
+        android:padding="6dip"
+        android:src="@drawable/cha_cha" />
+
+    <RelativeLayout
+        android:id="@+id/goods_listview_item_"
+        android:layout_width="fill_parent"
+        android:layout_height="90dip"
+        android:layout_marginRight="8dip" >
+
+        <TextView
+            android:id="@+id/goods_listview_item_tea_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:layout_marginTop="3dip"
+            android:text="张一元茉莉花茶礼盒正品张一元茉莉花茶礼盒正品张一元茉莉花茶礼盒正品张一元茉莉花茶礼盒正品张一元茉莉花茶礼盒正品"
+            android:textColor="@color/theme_text_normal_color_black"
+            android:textSize="@dimen/textsize_middle" />
+
+        <TextView
+            android:id="@+id/goods_listview_item_tea_sale_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="3dip"
+            android:text="销量：1256"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="@dimen/textsize_middle" />
+
+        <TextView
+            android:id="@+id/goods_listview_item_tea_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="3dip"
+            android:text="杭州西湖"
+            android:textColor="@color/theme_text_normal_color_gary"
+            android:textSize="@dimen/textsize_middle" />
+
+        <TextView
+            android:id="@+id/goods_listview_item_tea_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/goods_listview_item_tea_sale_volume"
+            android:layout_marginBottom="3dip"
+            android:text="￥1256.00"
+            android:textColor="@color/theme_text_normal_color_red"
+            android:textSize="@dimen/textsize_middle" />
+    </RelativeLayout>
+
+</LinearLayout>

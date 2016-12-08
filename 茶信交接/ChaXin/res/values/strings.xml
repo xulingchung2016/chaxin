@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 茶慈善 -->
+    <string name="my_donate">我的捐献</string>
+    <string name="my_donate_record">捐献详情</string>
+    <string name="project_detail">项目详情</string>
+    <string name="share">分享</string>
+    <string name="cishan_protocol">《茶慈善协议》</string>
+    <string name="cishan_donate_dailog_ok">捐献</string>
+    <string name="cishan_donate_dailog_text">我要捐献</string>
+    <string name="cishan_donate_gold">已捐%1$s金币</string>
+    <string name="cishan_donate_love">奉献%1$s份爱心</string>
+    
+    
+    <!-- 茶众筹 -->
+    <string name="zhongchou_protocol">《茶众筹协议》</string>
+    <string name="zhongchou_dailog_ok">确认</string>
+    <string name="zhongchou_dailog_text">我要众筹</string>
+    <string name="my_crowdfunding">我的众筹 </string>
+    <string name="my_earnings">我的收益 </string>
+    <string name="withdraw_deposit">提现密码 </string>
+    <string name="id_null">身份证号码不能为空 </string>
+    <string name="phone_null">手机号码不能为空 </string>
+    <string name="pwd_null">密码不能为空 </string>
+    <string name="pwd_affirm_null">确认密码不能为空 </string>
+    <string name="pwd_not_same">密码不一致 </string>
+    <string name="pwd_set_suc">密码设置成功 </string>
+    <string name="pwd_set_fail">密码设置失败 </string>
+    <string name="withraw">我要提现 </string>
+    <string name="crowdfunding_total_nu">众筹总金额 </string>
+    <string name="my_participation">我的分红 </string>
+    
+    
+<!-- 定种茶苗 -->
+	<string name="tea_currency">茶币</string>
+	<string name="select_varieties">选择品种</string>
+	<string name="variety">品种</string>
+	<string name="amount">数量</string>
+	<string name="drop_down_detail">下拉查看图文详情</string>
+	<string name="shoucang">收藏</string>
+	<string name="consultation">咨询</string>
+	<string name="order">我要订种</string>
+	<string name="order_form">确认订单</string>
+	<string name="qq">QQ：</string>
+	<string name="qq_hint">输入可联系QQ(必填)</string>
+	<string name="message_hint">选填：给商家留言(85字以内)</string>
+	<string name="pay_chabi">应付茶币：</string>
+	<string name="gold_deposits">金币充值</string>
+	<string name="submit_orders">提交订单</string>
+    <string name="empty_data">暂无数据</string>
+    <string name="get_data_fail">获取数据失败</string>
+    <string name="toast_select_varieties">请选择品种</string>
+<!-- 找茶馆 -->
+	<string name="chaguan_detail">点击查看该茶馆详情</string>
+	<string name="search_periphera">搜索周边茶铺</string>
+	<string name="cancel">取消</string>
+	<string name="my_location">我的位置</string>
+	<string name="start_hint">起点：</string>
+	<string name="end_hint">终点：</string>
+	<string name="navigation">导航</string>
+	<string name="deal_nu">成交%1$s次</string>
+	
+	
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载…</string>
+    <string name="xlistview_header_hint_refreshing">正在刷新…</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_header_update_status_success">刷新成功</string>
+    <string name="xlistview_header_update_status_fail">刷新失败</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_hint_load_fail">加载失败</string>
+    
+    <string name="loading">正在加载</string>
+    
+      <!-- 城市列表 -->
+    <string name="city_used">常用城市</string>
+    <string name="city_get_error">获取城市列表失败，请重试</string>
+    <string name="city_search_none">没有找到</string>
+    <string name="detail_title_des">城市选择</string>
+    <string name="city_search_hint">搜索</string>
+    <string name="route_suggestion_walk">距离较近，建议您步行</string>
+     <string name="rlren_tip">资料提交成功\n资料审核中,1-3个工\n作日给予回复</string>
+      <!-- 城市选择页 -->
+    <string name="city_choose_title">城市选择</string>
+    <string name="tea_price">价格:</string>
+    
+    <string name="pay_result_tip">支付成功！</string>
+	<string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+	<string name="app_tip">提示</string>
+   
+</resources>

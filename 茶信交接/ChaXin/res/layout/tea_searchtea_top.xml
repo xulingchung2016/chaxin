@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dip"
+    android:background="@drawable/actionbar_background" >
+
+    <ImageView
+        android:id="@+id/tea_teasearch_top_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:src="@drawable/back"
+        android:layout_marginLeft="@dimen/tea_space_10"/>
+
+    <TextView
+        android:id="@+id/tea_teasearch_top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/tea_search_tea"
+        android:textColor="@color/theme_actionbar_text_color"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/tea_teasearch_top_search"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_toLeftOf="@+id/tea_teasearch_top_message"
+        android:src="@drawable/selector_searchbutton" />
+
+    <ImageView
+        android:id="@+id/tea_teasearch_top_message"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/actionbar_right_more"
+        android:layout_marginRight="@dimen/tea_space_10"/>
+
+    
+    <LinearLayout
+        android:id="@+id/tea_teasearch_top_layout_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_frame"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/tea_space_8"
+        android:layout_marginLeft="@dimen/tea_space_10"
+        android:layout_toLeftOf="@+id/tea_teasearch_top_cancel"
+        android:layout_centerVertical="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/tea_teasearch_top_layout_iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_searchbutton" />
+
+        <EditText
+            android:id="@+id/tea_teasearch_top_layout_et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/search_periphera"
+            android:padding="@dimen/tea_space_5"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_middle" />
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/tea_teasearch_top_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:visibility="gone"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_max"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/tea_space_10"
+        android:layout_marginLeft="@dimen/tea_space_10"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

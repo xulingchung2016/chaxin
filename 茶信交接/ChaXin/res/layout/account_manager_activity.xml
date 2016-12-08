@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/all_actionbar"/>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <View
+            style="@style/all_divider_all_screen"
+            android:layout_marginLeft="@dimen/marginleft8dip" />
+
+        <LinearLayout
+            android:id="@+id/set_person_data"
+            style="@style/my_four_linear_horizontal" >
+
+            <TextView
+                style="@style/set_textview_style"
+                android:text="@string/user_manager_bank_card_manager" />
+
+            <ImageView style="@style/my_arrows_right" />
+        </LinearLayout>
+
+        <View
+            style="@style/all_divider_all_screen"
+            android:layout_marginLeft="@dimen/marginleft8dip" />
+
+        <LinearLayout
+            android:id="@+id/set_account_manager"
+            style="@style/my_four_linear_horizontal" >
+
+            <TextView
+                style="@style/set_textview_style"
+                android:text="@string/password_change" />
+
+            <ImageView style="@style/my_arrows_right" />
+        </LinearLayout>
+
+        
+  
+    
+     <View
+            style="@style/all_divider_all_screen"
+            android:layout_marginLeft="@dimen/marginleft8dip" 
+            />
+    
+
+    
+
+        <LinearLayout
+            android:id="@+id/set_clear_cache"
+            style="@style/my_four_linear_horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="6dip" >
+
+            <TextView
+                style="@style/set_textview_style"
+                android:text="@string/reset_pw" />
+
+             <ImageView style="@style/my_arrows_right" />
+        </LinearLayout>
+
+        <View
+            style="@style/all_divider_all_screen"
+            android:layout_marginLeft="@dimen/marginleft8dip" />
+
+        <LinearLayout
+            android:id="@+id/set_about_chaxin"
+            style="@style/my_four_linear_horizontal" >
+
+            <TextView
+                style="@style/set_textview_style"
+                android:text="@string/change_phone_num" />
+
+            <ImageView style="@style/my_arrows_right" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

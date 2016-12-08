@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background_color_gray"
+    android:orientation="vertical" >
+
+    <include layout="@layout/all_actionbar" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:padding="10dip" >
+
+        <TextView
+            style="@style/all_tv_wrap_middle_gray"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsize_max"
+            android:text="@string/mgo_exit_money" />
+
+        <TextView
+            android:id="@+id/mgo_exit_money"
+            style="@style/all_tv_wrap_middle_gray"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:text="￥380.00"
+            android:textColor="@color/theme_text_normal_color_red" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dip"
+        android:background="@color/white"
+        android:padding="10dip" >
+
+        <TextView
+            style="@style/all_tv_wrap_middle_gray"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsize_max"
+            android:text="@string/mgo_exit_tea_money" />
+
+        <TextView
+            android:id="@+id/mgo_exit_tea_money"
+            style="@style/all_tv_wrap_middle_gray"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dip"
+            android:text="￥380.00"
+            android:textColor="@color/theme_text_normal_color_red" />
+    </RelativeLayout>
+
+</LinearLayout>
